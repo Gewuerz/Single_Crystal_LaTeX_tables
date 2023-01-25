@@ -1,0 +1,460 @@
+
+ 31-Jan-2022 06:57  ---------------- X-Area summary file created ---------------
+
+ Parameter file :   D:\Pöttgen\Pu3\Pu3
+
+ 31-Jan-2022 06:57  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pu3
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        triclinic
+    Lattice type:          P
+    Laue class:            -1
+    Space group:
+    Cell:                  10.0000  10.0000  10.0000   90.000   90.000   90.000
+    Esds:                   0.0000   0.0000   0.0000    0.000    0.000    0.000
+    Volume, esd:           1000.00,  0.00
+
+    Z, sum formula:        1.000
+    Molecular weight:      0.000
+    Density (calc.):       0.000 g cm-3 (Mg m-3)
+    Mean atomic volume:    0.0
+    Linear abs. coeff.:    0.000 mm-1
+
+ 31-Jan-2022 07:07  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pu3 Eu Ni4 Sn2 JB151 B3K3 Bönnighausen 310122
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        triclinic
+    Lattice type:          P
+    Laue class:            -1
+    Space group:
+    Cell:                  10.0000  10.0000  10.0000   90.000   90.000   90.000
+    Esds:                   0.0000   0.0000   0.0000    0.000    0.000    0.000
+    Volume, esd:           1000.00,  0.00
+
+    Z, sum formula:        4.000   Eu Ni4 Sn2
+    Molecular weight:      624.158
+    Density (calc.):       4.146 g cm-3 (Mg m-3)
+    Mean atomic volume:    35.7
+    Linear abs. coeff.:    18.350 mm-1
+
+ 31-Jan-2022 07:13  ------------------- Begin of measurement -------------------
+
+    Wavelength [Å]         : 0.71073
+    Tube power [kW]        : 1.80
+    Tube voltage [kV]      : 45.0
+    Tube current [mA]      : 40
+    Collimator size [mm]   : 0.5
+    Temperature [K]        : 293.16
+    Detector distance [mm] : 70.0
+    Pixelsize [mm]         : 0.150
+    Scanradius [mm]        : 4.0 - 170.0
+    Filter usage           : never
+    2theta range           : 3.27 - 67.62
+    d(hkl) range [Å]       : 12.453 - 0.639
+
+    Run #1
+      Phi                  : 0.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 2.0
+      Frames               : 180
+
+    Run #2
+      Phi                  : 60.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 2.0
+      Frames               : 180
+
+    Run #3
+      Phi                  : 120.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 2.0
+      Frames               : 180
+
+    Run #4
+      Phi                  : 215.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 2.0
+      Frames               : 180
+
+    Run #5
+      Phi                  : 155.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 2.0
+      Frames               : 180
+
+    First frame to process is frame 1 from run 1
+
+ 31-Jan-2022 08:29  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 0 runs, 20 frames ) :
+    Run  1   Frames  1, 20
+
+    Min, max I/Sigma :  6.0,  0.0        Grid : 6        N-Skip : 0
+
+    Min, max 2Theta  :  4.0, 68.0        New peaklist : Yes
+
+    1123 Peaks found, deleted 75, independent 922
+
+ 01-Feb-2022 12:02  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pu3 Eu Ni4 Sn2 JB151 B3K3 Bönnighausen 310122
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        tetragonal
+    Lattice type:          P
+    Laue class:            4/m
+    Space group:
+    Cell:                  7.8347   7.8347   7.7643   90.000   90.000   90.000
+    Esds:                  0.0034   0.0033   0.0035    0.036    0.036    0.035
+    Volume, esd:           476.60,  0.36
+
+    Z, sum formula:        4.000   Eu Ni4 Sn2
+    Molecular weight:      624.158
+    Density (calc.):       8.699 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.0
+    Linear abs. coeff.:    38.500 mm-1
+
+ 01-Feb-2022 12:04  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 2 runs, 412 frames ) :
+    Run  1   Frames  1,180
+    Run  2   Frames  1,180
+    Run  3   Frames  1, 52
+
+    Min, max 2Theta  :  0.0, 60.0        New peaklist : Yes
+
+    17942 Peaks found, deleted 2061, independent 13823
+
+ 01-Feb-2022 12:05  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 9435 out of 13823
+
+    Min, max 2Theta : 7.35, 60.02
+
+    Crystal system  : Tetragonal
+
+    Cell :   7.8374   7.8374   7.7559  90.000  90.000  90.000    476.41
+    Esds :   0.0008   0.0008   0.0009   0.000   0.000   0.000      0.09
+    Fit  :   0.0084
+
+    Orienting matrix :  -0.051343   0.110538   0.038147
+                        -0.094504  -0.015078  -0.085278
+                        -0.068651  -0.061919   0.088862
+
+ 01-Feb-2022 12:05  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 9439 out of 13823
+
+    Min, max 2Theta : 7.35, 60.02
+
+    Crystal system  : Tetragonal
+
+    Cell :   7.8372   7.8372   7.7560  90.000  90.000  90.000    476.39
+    Esds :   0.0008   0.0008   0.0009   0.000   0.000   0.000      0.09
+    Fit  :   0.0084
+
+    Orienting matrix :  -0.051344   0.110541   0.038146
+                        -0.094506  -0.015077  -0.085278
+                        -0.068654  -0.061919   0.088861
+
+ 01-Feb-2022 12:05  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 9439 out of 13823
+
+    Min, max 2Theta : 7.35, 60.02
+
+    Crystal system  : Tetragonal
+
+    Cell :   7.8372   7.8372   7.7560  90.000  90.000  90.000    476.39
+    Esds :   0.0008   0.0008   0.0009   0.000   0.000   0.000      0.09
+    Fit  :   0.0084
+
+    Orienting matrix :  -0.051344   0.110541   0.038146
+                        -0.094506  -0.015077  -0.085278
+                        -0.068654  -0.061919   0.088861
+
+ 01-Feb-2022 12:05  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 9439 out of 13823
+
+    Min, max 2Theta : 7.35, 60.02
+
+    Crystal system  : Tetragonal
+
+    Cell :   7.8372   7.8372   7.7560  90.000  90.000  90.000    476.39
+    Esds :   0.0008   0.0008   0.0009   0.000   0.000   0.000      0.09
+    Fit  :   0.0084
+
+    Orienting matrix :  -0.051344   0.110541   0.038146
+                        -0.094506  -0.015077  -0.085278
+                        -0.068654  -0.061919   0.088861
+
+ 01-Feb-2022 12:07  ----------------------- Integration ------------------------
+
+    Domains:               Y:\Ipds-A\Pu3\Pu3.x
+
+    Runs/frames:           Available:           2 run(s), 412 frames
+                           Selected:            Run  1    Frames  1 - 180
+                                                Run  2    Frames  1 - 180
+                                                Run  3    Frames  1 -  52
+
+    Setup:                 Use filter frames:   OFF
+                           Overlap check:       ON, 0 % tolerance
+                           Wavelengths:         Mo  0.70930, 0.71359  (0.71073)
+                           Apply q vectors:     OFF
+                           Apply shading masks: OFF
+                           Apply beamstop mask: OFF
+                           Apply 2nd b.s. mask: OFF
+                           Shading by HPC:      OFF
+                           Control refls.:      50  200  (I/sigma >= 6.0)
+
+    Advanced:              Profiles:            elliptical
+                           Vary slopes:         ON
+                           C.-of-grav. checks:  2, 1 (weaker), 0 (weakest)
+                           Corr. sphere dist.:  20 %
+                           Pixel int. offset:   0.0
+                           Pixel int. factor:   1.0
+                           Background area:     1.2 times the peak area
+                           Refine matrix:       ON
+                           Init. ctrl. refls.:  OFF
+                           Corrections:         L P A -
+                           Lorentz correction:  min: 0.0100, max: 1.3223
+                           Polarisat. factor:   min: 0.5498, max: 0.9964
+                           Air transmission:    min: 0.9729, max: 0.9907
+                           Min. Lorentz factor: 0.010
+                           Mono. d*, orient.:   0.298151, 0.0
+                           Dir. cos. method:    flexible
+                           Cut off refls.:      ON (95.0 % of max. radius)
+                           Dir. cos., hkl file: ON
+                           Merge reflections:   OFF
+                           Scaling mode:        autom. due to overall Fo2(max)
+
+    Parameters:            A, B, EMS:           14.0  -1.0  0.030
+
+    Main statistics:       Mean intensity:      236 - 6446
+                           Control refl.:       11 - 34
+                           Mean chi^2*10000:    0.00 - 0.30
+                           Cell volume:         475.9 - 477.9
+                           Delta(max) [%]:      0.2 0.3 0.2  0.2 0.2 0.3  0.3
+                           Scale factor:        0.0709134, proposed: 0.0709134
+
+    hkl output:            Y:\Ipds-A\Pu3\Pu3.hkl
+                           Overlapped:          0  (rejected)
+                           Overflowed:          3  (omitted but x file)
+                           Lorentz zone:        86  (omitted but x file)
+                           Saved reflections:   14483  (14571 into x file)
+                           Mean Fo2/sigma:      11.7
+                           Mean Fo2:            263.7
+
+    Elapsed time [s]:      88.4
+
+ 01-Feb-2022 12:21  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pu3 Eu Ni4 Sn2 JB151 B3K3 Bönnighausen 310122
+
+    Colour:
+    Shape:
+    Size, radius:          0.160 x 0.057 x 0.041 mm3,  0.000 mm
+
+    Crystal system:        tetragonal
+    Lattice type:          I
+    Laue class:            4/m m m
+    Space group:           I 4/m c m
+    Cell:                  7.8372   7.8372   7.7560   90.000   90.000   90.000
+    Esds:                  0.0008   0.0008   0.0009    0.000    0.000    0.000
+    Volume, esd:           476.39,  0.09
+
+    Z, sum formula:        4.000   Eu Ni4 Sn2
+    Molecular weight:      624.158
+    Density (calc.):       8.703 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.0
+    Linear abs. coeff.:    38.520 mm-1
+
+ 01-Feb-2022 12:23  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pu3 Eu Ni4 Sn2 JB151 B3K3 Bönnighausen 310122
+
+    Colour:
+    Shape:
+    Size, radius:          0.160 x 0.057 x 0.041 mm3,  0.000 mm
+
+    Crystal system:        tetragonal
+    Lattice type:          I
+    Laue class:            4/m m m
+    Space group:           I 4/m c m
+    Cell:                  7.8372   7.8372   7.7560   90.000   90.000   90.000
+    Esds:                  0.0008   0.0008   0.0009    0.000    0.000    0.000
+    Volume, esd:           476.39,  0.09
+
+    Z, sum formula:        4.000   Eu Ni4 Sn2
+    Molecular weight:      624.158
+    Density (calc.):       8.703 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.0
+    Linear abs. coeff.:    38.520 mm-1
+
+ 01-Feb-2022 12:26  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                         14469    11.70          0     0.00
+    C            h + k = 2n                 7259    15.37       7210     8.00
+    A            k + l = 2n                 7254    11.77       7215    11.63
+    B            h + l = 2n                 7256    11.66       7213    11.74
+    F            h+k=2n, k+l=2n, h+l=2n     3650    15.38      10819    10.46
+    I            h + k + l = 2n             7245    21.72       7224     1.65
+    R obverse   -h + k + l = 3n             4762    12.35       9707    11.38
+    R reverse    h - k + l = 3n             4793    12.23       9676    11.44
+
+    Cell parameters [A,°]:                 7.84 7.84 7.76 90.0 90.0 90.0
+    Highest-possible crystal system:       cubic
+    Lattice type:                          I
+    Maximum 2theta [°]:                    67
+    Reflections used for R(int):           7245
+    Absorption correction?                 yes
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           3343        2.17      0.0361
+    triclinic        -1                             1834        3.95      0.0417
+    monoclinic       2/m    ->  unique axis b        983        7.37      0.0453
+    monoclinic       2/m    ->  unique axis c        984        7.36      0.0447
+    monoclinic       2/m    ->  unique axis a        984        7.36      0.0455
+    orthorhombic     mmm                             552       13.13      0.0466
+    tetragonal       4/m                             495       14.64      0.0467
+    tetragonal       4/mmm                           299       24.23      0.0472
+    trigonal         -3                             1285        5.64      0.3057
+    trigonal         -3m    ->  -31m                 702       10.32      0.3097
+    trigonal         -3m    ->  -3m1                 724       10.01      0.3084
+    hexagonal        6/m                             691       10.48      0.3095
+    hexagonal        6/mmmm                          414       17.50      0.3109
+    cubic            m-3                             190       38.13      0.7589
+    cubic            m-3m                            119       60.88      0.7604
+
+ 01-Feb-2022 12:27  ----------------- Laue Analyzer (Scaling) ------------------
+
+    Cell parameters [A,°]:                 7.84 7.84 7.76 90.0 90.0 90.0
+    Crystal system, Laue class:            tetragonal,  4/mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          I
+
+    Scaling [frame, beam(out)]:
+    
+       R(int) at beginning: 	0.0472	(100 %)
+       R(int) after cycle  1: 	0.0444	( 94 %)
+       R(int) after cycle  2: 	0.0439	( 93 %)
+       ...
+       R(int) after cycle  7: 	0.0434	( 92 %)
+       R(int) after cycle  8: 	0.0434	( 92 %)
+       R(int) after cycle  9: 	0.0434	( 92 %)
+    
+       4956 (l.s.) out of 7245 (Rint) out of 14571 (x file) reflections
+       used for the optimization.
+    
+       Statistics over combined scale factors for x file reflections:
+       min. = 0.926 (run 2)   max. = 1.082 (run 3)    spread = 0.2
+
+    Statistis over scale factors for least-squares reflections:
+                                  min.       mean       max.     spread    cond.
+       Methods combined:         0.926      1.000      1.082      0.156
+       Frame      scaling:       0.953      1.000      1.040      0.087      1
+       Detector X scaling:       1.000      1.000      1.000      0.000      -
+       Detector Y scaling:       1.000      1.000      1.000      0.000      -
+       Detector r scaling:       1.000      1.000      1.000      0.000      -
+       Beam(in)   scaling:       1.000      1.000      1.000      0.000      -
+       Beam(out)  scaling:       0.961      1.000      1.053      0.092     4,1
+
+ 01-Feb-2022 12:27  ----------------- Laue Analyzer (hkl File) -----------------
+
+    Cell parameters [A,°]:                 7.84 7.84 7.76 90.0 90.0 90.0
+    Crystal system, Laue class:            tetragonal,  4/mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          I
+    I/sigma(I) scaling:                    1.00
+    2theta range [°]:                      0.0  -  180.0
+    Run range:                             1  -  99
+    I/sigma(I) range:                      -999999.0  -  999999.0
+    Absorption correction?                 yes
+    Decay correction?                      not possible
+    Previous scaling?                      not possible
+    New scaling?                           yes:
+                                           frame scaling, order 1
+                                           beam(out) scaling, l(max) 4,1
+    Include unscalable runs?               such runs not found
+    Spherical absorption correction?       yes, mu = 38.5200 mm-1, r = 0.0415 mm
+                                           T(min) = 0.1142, T(max) = 0.1465
+    Include overflows and Lorentz refls.?  no
+    Include satellites?                    no
+    Reject outliers? (Coefficients:)       yes (0.050, 0.000, 0.000, 1.000)
+                                           R(int):  0.0434 -> 0.0340
+                                           N(unmerged):  7245 -> 6855
+                                           N(outliers):  390
+                                           N(unique):  299 -> 299
+                                           <Redundancy>:  24.2 -> 22.9
+    Write run numbers as batch numbers?    no
+    Write direction cosines?               no
+    Saved reflections, <I/sigma(I)>:       6855,  20.3
+
+ 01-Feb-2022 12:27  ------------ Cell/modulation vectors refinement ------------
+
+    Number of control reflections used = 7823 out of 8942
+
+    Min, max 2Theta : 7.35, 67.23
+
+    Crystal system  : Tetragonal
+
+    Cell :   7.8373   7.8373   7.7590  90.000  90.000  90.000    476.58
+    Esds :   0.0005   0.0005   0.0005   0.000   0.000   0.000      0.05
+    Fit  :   0.0034
+
+    Orienting matrix :  -0.051392   0.110508   0.038162
+                        -0.094479  -0.015076  -0.085273
+                        -0.068651  -0.061978   0.088786
+
+ 01-Feb-2022 12:40  ---------------- Building reciprocal space -----------------
+
+    Runs/frames:           Available:           2 run(s), 412 frames
+                           Selected:            Run  1    Frames   1 - 180
+                                                Run  2    Frames   1 - 180
+                                                Run  3    Frames   1 -  52
+                                                Run  4    Frames   1 -   0
+                                                Run  5    Frames   1 -   0
+
+    Conditions for array:  XYZ(min)  [A-1]:     -1.0000
+                           XYZ(max)  [A-1]:     1.0000
+                           Increment [A-1]:     0.0040
+                           Correct positions:   yes
+                           Repair tiny holes:   yes
+                           Subpixels (X,Y):     1 (proposal: 2)
+                           Subpixels (omega):   3 (proposal: 7)
+
+    Frames selected:       2Theta range:        4.3 - 67.6
+                           Pixels:              2267 x 2267
+                           Maximum d* [A-1]:    1.566
+
+    3D array (cube):       2theta range [deg]:  0.0 - 76.0
+                           Voxels (edge):       501
+                           Voxels (total):      125751501
+                           Memory [MB]:         479
+                           Coverage:            94.587 %
+                           Tiny holes:          0.409 %, 487971
+                           Elapsed time:        11.1 min

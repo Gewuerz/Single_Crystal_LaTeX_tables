@@ -1,0 +1,1393 @@
+
+ 02-Jul-2019 10:29  ---------------- X-Area summary file created ---------------
+
+ Parameter file :   D:\Pöttgen\Pr53\Pr53
+
+ 02-Jul-2019 10:35  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        triclinic
+    Lattice type:          P
+    Laue class:            -1
+    Space group:
+    Cell:                  10.0000  10.0000  10.0000   90.000   90.000   90.000
+    Esds:                   0.0000   0.0000   0.0000    0.000    0.000    0.000
+    Volume, esd:           1000.00,  0.00
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       7.212 g cm-3 (Mg m-3)
+    Mean atomic volume:    27.8
+    Linear abs. coeff.:    60.940 mm-1
+
+ 02-Jul-2019 10:53  ------------------- Begin of measurement -------------------
+
+    Wavelength [Å]         : 0.71073
+    Tube power [kW]        : 1.80
+    Tube voltage [kV]      : 45.0
+    Tube current [mA]      : 40
+    Collimator size [mm]   : 0.5
+    Temperature [K]        : 293.16
+    Detector distance [mm] : 90.0
+    Pixelsize [mm]         : 0.150
+    Scanradius [mm]        : 4.0 - 170.0
+    Filter usage           : never
+    2theta range           : 2.54 - 62.10
+    d(hkl) range [Å]       : 16.003 - 0.689
+
+    Run #1
+      Phi                  : 0.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 20.0
+      Frames               : 180
+
+    Run #2
+      Phi                  : 60.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 20.0
+      Frames               : 180
+
+    Run #3
+      Phi                  : 120.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 20.0
+      Frames               : 180
+
+    Run #4
+      Phi                  : 215.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 20.0
+      Frames               : 180
+
+    Run #5
+      Phi                  : 155.0
+      Omega range          : 0.0 - 180.0
+      Omega increment      : 1.0  ( osc. )
+      Exposure time [min]  : 20.0
+      Frames               : 180
+
+    First frame to process is frame 1 from run 1
+
+ 02-Jul-2019 14:48  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 0 runs, 10 frames ) :
+    Run  1   Frames  1, 10
+
+    Min, max 2Theta  :  0.0, 60.0        New peaklist : Yes
+
+    596 Peaks found, deleted 77, independent 494
+
+ 02-Jul-2019 14:49  ---------------------- Index results -----------------------
+
+    Number of peaks used/selected = 494 out of 494
+
+    Initial cell :   4.120  21.272   7.388   89.85   89.94   78.90    635.3
+
+    Final   cell :   4.122   7.385  20.875   89.89   89.98   90.03    635.4
+
+    Lattice type : Orthorhombic P
+
+    Indexed peaks: 358 ( 72.5 % )
+
+    Orienting matrix :  -0.235400  -0.029652  -0.004920
+                        -0.008754  -0.039601   0.045806
+                        -0.058008   0.126050   0.013132
+
+ 02-Jul-2019 14:49  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 358 out of 494
+
+    Min, max 2Theta : 9.96, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1223   7.3808  20.8709  90.000  90.000  90.000    635.01
+    Esds :   0.0014   0.0045   0.0085   0.000   0.000   0.000      0.51
+    Fit  :   0.0063
+
+    Orienting matrix :  -0.235388  -0.029631  -0.004938
+                        -0.008708  -0.039464   0.045804
+                        -0.058000   0.126180   0.013165
+
+ 02-Jul-2019 14:49  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 406 out of 494
+
+    Min, max 2Theta : 9.96, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1225   7.3782  20.8573  90.000  90.000  90.000    634.41
+    Esds :   0.0015   0.0049   0.0092   0.000   0.000   0.000      0.56
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235407  -0.029572  -0.004935
+                        -0.008701  -0.039501   0.045831
+                        -0.057872   0.126232   0.013185
+
+ 02-Jul-2019 14:49  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 407 out of 494
+
+    Min, max 2Theta : 9.96, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1223   7.3770  20.8529  90.000  90.000  90.000    634.15
+    Esds :   0.0015   0.0049   0.0091   0.000   0.000   0.000      0.55
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235417  -0.029578  -0.004935
+                        -0.008695  -0.039506   0.045841
+                        -0.057874   0.126253   0.013188
+
+ 02-Jul-2019 14:49  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 407 out of 494
+
+    Min, max 2Theta : 9.96, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1223   7.3770  20.8529  90.000  90.000  90.000    634.15
+    Esds :   0.0015   0.0049   0.0091   0.000   0.000   0.000      0.55
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235417  -0.029578  -0.004935
+                        -0.008695  -0.039506   0.045841
+                        -0.057874   0.126253   0.013188
+
+ 02-Jul-2019 14:49  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 407 out of 494
+
+    Min, max 2Theta : 9.96, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1223   7.3770  20.8529  90.000  90.000  90.000    634.15
+    Esds :   0.0015   0.0049   0.0091   0.000   0.000   0.000      0.55
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235417  -0.029578  -0.004935
+                        -0.008695  -0.039506   0.045841
+                        -0.057874   0.126253   0.013188
+
+ 03-Jul-2019 08:33  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1223   7.3770  20.8529   90.000   90.000   90.000
+    Esds:                  0.0015   0.0049   0.0091    0.000    0.000    0.000
+    Volume, esd:           634.15,  0.55
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.373 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.100 mm-1
+
+ 03-Jul-2019 08:33  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 0 runs, 59 frames ) :
+    Run  1   Frames  1, 59
+
+    Min, max 2Theta  :  0.0, 60.0        New peaklist : Yes
+
+    3450 Peaks found, deleted 437, independent 2825
+
+ 03-Jul-2019 08:34  ---------------------- Index results -----------------------
+
+    Number of peaks used/selected = 2000 out of 2825
+
+    Initial cell :   8.457  26.853   7.385  123.40   29.17  109.33    634.5
+
+    Final   cell :   4.122   7.381  20.845   90.01   90.00   90.01    634.2
+
+    Lattice type : Orthorhombic P
+
+    Indexed peaks: 2364 ( 83.7 % )
+
+    Orienting matrix :  -0.235322  -0.029761  -0.005014
+                        -0.008889  -0.039674   0.045832
+                        -0.058303   0.126089   0.013250
+
+ 03-Jul-2019 08:34  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 2364 out of 2825
+
+    Min, max 2Theta : 9.90, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1217   7.3808  20.8451  90.000  90.000  90.000    634.13
+    Esds :   0.0008   0.0022   0.0040   0.000   0.000   0.000      0.25
+    Fit  :   0.0081
+
+    Orienting matrix :  -0.235338  -0.029749  -0.005013
+                        -0.008884  -0.039687   0.045835
+                        -0.058324   0.126081   0.013245
+
+ 03-Jul-2019 08:34  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 2346 out of 2825
+
+    Min, max 2Theta : 9.90, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1217   7.3814  20.8462  90.000  90.000  90.000    634.22
+    Esds :   0.0007   0.0020   0.0037   0.000   0.000   0.000      0.23
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235328  -0.029758  -0.005023
+                        -0.008925  -0.039695   0.045831
+                        -0.058359   0.126066   0.013245
+
+ 03-Jul-2019 08:35  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 2346 out of 2825
+
+    Min, max 2Theta : 9.90, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1217   7.3814  20.8462  90.000  90.000  90.000    634.22
+    Esds :   0.0007   0.0020   0.0037   0.000   0.000   0.000      0.23
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235328  -0.029758  -0.005023
+                        -0.008925  -0.039695   0.045831
+                        -0.058359   0.126066   0.013245
+
+ 03-Jul-2019 08:35  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 2346 out of 2825
+
+    Min, max 2Theta : 9.90, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1217   7.3814  20.8462  90.000  90.000  90.000    634.22
+    Esds :   0.0007   0.0020   0.0037   0.000   0.000   0.000      0.23
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235328  -0.029758  -0.005023
+                        -0.008925  -0.039695   0.045831
+                        -0.058359   0.126066   0.013245
+
+ 03-Jul-2019 08:35  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 2346 out of 2825
+
+    Min, max 2Theta : 9.90, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1217   7.3814  20.8462  90.000  90.000  90.000    634.22
+    Esds :   0.0007   0.0020   0.0037   0.000   0.000   0.000      0.23
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235328  -0.029758  -0.005023
+                        -0.008925  -0.039695   0.045831
+                        -0.058359   0.126066   0.013245
+
+ 03-Jul-2019 08:38  ----------------------- Integration ------------------------
+
+    Domains:               S:\Pöttgen\Pr53\Pr53.x
+
+    Runs/frames:           Available:           0 run(s), 59 frames
+                           Selected:            Run  1    Frames  1 -  59
+
+    Setup:                 Use filter frames:   OFF
+                           Overlap check:       ON, 0 % tolerance
+                           Wavelengths:         Mo  0.70930, 0.71359  (0.71073)
+                           Apply q vectors:     OFF
+                           Apply shading masks: OFF
+                           Apply beamstop mask: OFF
+                           Apply 2nd b.s. mask: OFF
+                           Shading by HPC:      OFF
+                           Control refls.:      50  200  (I/sigma >= 6.0)
+
+    Advanced:              Profiles:            elliptical
+                           Vary slopes:         ON
+                           C.-of-grav. checks:  2, 1 (weaker), 0 (weakest)
+                           Corr. sphere dist.:  20 %
+                           Pixel int. offset:   0.0
+                           Pixel int. factor:   1.0
+                           Background area:     1.2 times the peak area
+                           Refine matrix:       ON
+                           Init. ctrl. refls.:  OFF
+                           Corrections:         L P A -
+                           Lorentz correction:  min: 0.0103, max: 1.2704
+                           Polarisat. factor:   min: 0.5844, max: 0.9862
+                           Air transmission:    min: 0.9722, max: 0.9880
+                           Min. Lorentz factor: 0.010
+                           Mono. d*, orient.:   0.298151, 0.0
+                           Dir. cos. method:    flexible
+                           Cut off refls.:      ON (95.0 % of max. radius)
+                           Dir. cos., hkl file: ON
+                           Merge reflections:   OFF
+                           Scaling mode:        autom. due to overall Fo2(max)
+
+    Parameters:            A, B, EMS:           13.0  -2.0  0.020
+
+    Main statistics:       Mean intensity:      1277 - 7718
+                           Control refl.:       20 - 43
+                           Mean chi^2*10000:    0.00 - 0.12
+                           Cell volume:         634.2 - 635.3
+                           Delta(max) [%]:      0.1 0.2 0.1  0.1 0.1 0.1  0.2
+                           Scale factor:        0.0432034, proposed: 0.0432034
+
+    hkl output:            S:\Pöttgen\Pr53\Pr53.hkl
+                           Overlapped:          0  (rejected)
+                           Overflowed:          1  (omitted but x file)
+                           Lorentz zone:        6  (omitted but x file)
+                           Saved reflections:   2167  (2174 into x file)
+                           Mean Fo2/sigma:      16.3
+                           Mean Fo2:            247.6
+
+    Elapsed time [s]:      14.0
+
+ 03-Jul-2019 08:52  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1217   7.3814  20.8462   90.000   90.000   90.000
+    Esds:                  0.0007   0.0020   0.0037    0.000    0.000    0.000
+    Volume, esd:           634.22,  0.23
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.372 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.090 mm-1
+
+ 03-Jul-2019 08:59  ---------------- Building reciprocal space -----------------
+
+    Runs/frames:           Available:           0 run(s), 59 frames
+                           Selected:            Run  1    Frames   1 -  59
+                                                Run  2    Frames   1 -   0
+                                                Run  3    Frames   1 -   0
+                                                Run  4    Frames   1 -   0
+                                                Run  5    Frames   1 -   0
+
+    Conditions for array:  XYZ(min)  [A-1]:     -1.0000
+                           XYZ(max)  [A-1]:     1.0000
+                           Increment [A-1]:     0.0040
+                           Correct positions:   yes
+                           Repair tiny holes:   yes
+                           Subpixels (X,Y):     1 (proposal: 1)
+                           Subpixels (omega):   7 (proposal: 7)
+
+    Frames selected:       2Theta range:        4.3 - 62.1
+                           Pixels:              2267 x 2267
+                           Maximum d* [A-1]:    1.451
+
+    3D array (cube):       2theta range [deg]:  0.0 - 76.0
+                           Voxels (edge):       501
+                           Voxels (total):      125751501
+                           Memory [MB]:         479
+                           Coverage:            30.591 %
+                           Tiny holes:          0.000 %, 0
+                           Elapsed time:        4.3 min
+
+ 03-Jul-2019 09:03  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          2167    16.33          0     0.00
+    C            h + k = 2n                 1066    15.95       1101    16.70
+    A            k + l = 2n                 1091    16.03       1076    16.64
+    B            h + l = 2n                 1080    16.43       1087    16.23
+    F            h+k=2n, k+l=2n, h+l=2n      535    15.74       1632    16.53
+    I            h + k + l = 2n             1083    16.27       1084    16.40
+    R obverse   -h + k + l = 3n              718    16.45       1449    16.28
+    R reverse    h - k + l = 3n              732    15.90       1435    16.55
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           2167
+    Absorption correction?                 no
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           2165        1.00      0.0680
+    triclinic        -1                             2016        1.07      0.1379
+    monoclinic       2/m    ->  unique axis b       1470        1.47      0.1696
+    monoclinic       2/m    ->  unique axis c       1310        1.65      0.1216
+    monoclinic       2/m    ->  unique axis a       1384        1.57      0.1531
+    orthorhombic     mmm                             880        2.46      0.1602
+    tetragonal       4/m                             966        2.24      0.3808
+    tetragonal       4/mmm                           687        3.15      0.3978
+    trigonal         -3                             1260        1.72      0.7569
+    trigonal         -3m    ->  -31m                 920        2.36      0.7848
+    trigonal         -3m    ->  -3m1                 902        2.40      0.7885
+    hexagonal        6/m                             762        2.84      0.7026
+    hexagonal        6/mmmm                          597        3.63      0.7705
+    cubic            m-3                             743        2.92      0.3763
+    cubic            m-3m                            552        3.93      0.5869
+
+ 03-Jul-2019 09:14  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          2167    16.33          0     0.00
+    C            h + k = 2n                 1066    15.95       1101    16.70
+    A            k + l = 2n                 1091    16.03       1076    16.64
+    B            h + l = 2n                 1080    16.43       1087    16.23
+    F            h+k=2n, k+l=2n, h+l=2n      535    15.74       1632    16.53
+    I            h + k + l = 2n             1083    16.27       1084    16.40
+    R obverse   -h + k + l = 3n              718    16.45       1449    16.28
+    R reverse    h - k + l = 3n              732    15.90       1435    16.55
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           2167
+    Absorption correction?                 yes
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           2165        1.00      0.0562
+    triclinic        -1                             2016        1.07      0.1919
+    monoclinic       2/m    ->  unique axis b       1470        1.47      0.1496
+    monoclinic       2/m    ->  unique axis c       1310        1.65      0.1364
+    monoclinic       2/m    ->  unique axis a       1384        1.57      0.1400
+    orthorhombic     mmm                             880        2.46      0.1461
+    tetragonal       4/m                             966        2.24      0.3735
+    tetragonal       4/mmm                           687        3.15      0.4013
+    trigonal         -3                             1260        1.72      0.7654
+    trigonal         -3m    ->  -31m                 920        2.36      0.7968
+    trigonal         -3m    ->  -3m1                 902        2.40      0.8002
+    hexagonal        6/m                             762        2.84      0.7226
+    hexagonal        6/mmmm                          597        3.63      0.7852
+    cubic            m-3                             743        2.92      0.4091
+    cubic            m-3m                            552        3.93      0.6101
+
+ 03-Jul-2019 09:14  ----------------- Laue Analyzer (hkl File) -----------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+    I/sigma(I) scaling:                    1.00
+    2theta range [°]:                      0.0  -  180.0
+    Run range:                             1  -  99
+    I/sigma(I) range:                      -999999.0  -  999999.0
+    Absorption correction?                 yes
+    Decay correction?                      not possible
+    Previous scaling?                      not possible
+    New scaling?                           not possible
+    Spherical absorption correction?       no
+    Include overflows and Lorentz refls.?  no
+    Include satellites?                    no
+    Reject outliers? (Coefficients:)       yes (0.050, 0.000, 0.000, 1.000)
+                                           R(int):  0.1461 -> 0.1156
+                                           N(unmerged):  2167 -> 1959
+                                           N(outliers):  208
+                                           N(unique):  880 -> 880
+                                           <Redundancy>:  2.5 -> 2.2
+    Write run numbers as batch numbers?    no
+    Write direction cosines?               no
+    Saved reflections, <I/sigma(I)>:       1959,  15.8
+
+ 04-Jul-2019 09:18  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1217   7.3814  20.8462   90.000   90.000   90.000
+    Esds:                  0.0007   0.0020   0.0037    0.000    0.000    0.000
+    Volume, esd:           634.22,  0.23
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.372 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.090 mm-1
+
+ 04-Jul-2019 09:22  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 0 runs, 127 frames ) :
+    Run  1   Frames  1,127
+
+    Min, max 2Theta  :  0.0, 60.0        New peaklist : Yes
+
+    7409 Peaks found, deleted 943, independent 6073
+
+ 04-Jul-2019 09:22  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 5008 out of 6073
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1212   7.3827  20.8434  90.000  90.000  90.000    634.18
+    Esds :   0.0005   0.0012   0.0025   0.000   0.000   0.000      0.15
+    Fit  :   0.0073
+
+    Orienting matrix :  -0.235265  -0.029912  -0.005067
+                        -0.009033  -0.039742   0.045831
+                        -0.058704   0.125988   0.013254
+
+ 04-Jul-2019 09:22  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 5006 out of 6073
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1214   7.3822  20.8430  90.000  90.000  90.000    634.15
+    Esds :   0.0005   0.0012   0.0024   0.000   0.000   0.000      0.15
+    Fit  :   0.0072
+
+    Orienting matrix :  -0.235255  -0.029915  -0.005067
+                        -0.009034  -0.039742   0.045832
+                        -0.058703   0.125998   0.013253
+
+ 04-Jul-2019 09:22  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 5006 out of 6073
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1214   7.3822  20.8430  90.000  90.000  90.000    634.15
+    Esds :   0.0005   0.0012   0.0024   0.000   0.000   0.000      0.15
+    Fit  :   0.0072
+
+    Orienting matrix :  -0.235255  -0.029915  -0.005067
+                        -0.009034  -0.039742   0.045832
+                        -0.058703   0.125998   0.013253
+
+ 04-Jul-2019 09:22  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 5006 out of 6073
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1214   7.3822  20.8430  90.000  90.000  90.000    634.15
+    Esds :   0.0005   0.0012   0.0024   0.000   0.000   0.000      0.15
+    Fit  :   0.0072
+
+    Orienting matrix :  -0.235255  -0.029915  -0.005067
+                        -0.009034  -0.039742   0.045832
+                        -0.058703   0.125998   0.013253
+
+ 04-Jul-2019 09:25  ----------------------- Integration ------------------------
+
+    Domains:               S:\Pöttgen\Pr53\Pr53.x
+
+    Runs/frames:           Available:           0 run(s), 127 frames
+                           Selected:            Run  1    Frames  1 - 127
+
+    Setup:                 Use filter frames:   OFF
+                           Overlap check:       ON, 0 % tolerance
+                           Wavelengths:         Mo  0.70930, 0.71359  (0.71073)
+                           Apply q vectors:     OFF
+                           Apply shading masks: OFF
+                           Apply beamstop mask: OFF
+                           Apply 2nd b.s. mask: OFF
+                           Shading by HPC:      OFF
+                           Control refls.:      50  200  (I/sigma >= 6.0)
+
+    Advanced:              Profiles:            elliptical
+                           Vary slopes:         ON
+                           C.-of-grav. checks:  2, 1 (weaker), 0 (weakest)
+                           Corr. sphere dist.:  20 %
+                           Pixel int. offset:   0.0
+                           Pixel int. factor:   1.0
+                           Background area:     1.2 times the peak area
+                           Refine matrix:       ON
+                           Init. ctrl. refls.:  OFF
+                           Corrections:         L P A -
+                           Lorentz correction:  min: 0.0100, max: 1.2736
+                           Polarisat. factor:   min: 0.5843, max: 0.9995
+                           Air transmission:    min: 0.9721, max: 0.9881
+                           Min. Lorentz factor: 0.010
+                           Mono. d*, orient.:   0.298151, 0.0
+                           Dir. cos. method:    flexible
+                           Cut off refls.:      ON (95.0 % of max. radius)
+                           Dir. cos., hkl file: ON
+                           Merge reflections:   OFF
+                           Scaling mode:        autom. due to overall Fo2(max)
+
+    Parameters:            A, B, EMS:           14.0  -2.0  0.020
+
+    Main statistics:       Mean intensity:      836 - 7816
+                           Control refl.:       18 - 43
+                           Mean chi^2*10000:    0.00 - 0.13
+                           Cell volume:         633.9 - 635.4
+                           Delta(max) [%]:      0.2 0.2 0.2  0.1 0.1 0.2  0.2
+                           Scale factor:        0.0430494, proposed: 0.0430494
+
+    hkl output:            S:\Pöttgen\Pr53\Pr53.hkl
+                           Overlapped:          0  (rejected)
+                           Overflowed:          1  (omitted but x file)
+                           Lorentz zone:        15  (omitted but x file)
+                           Saved reflections:   4845  (4861 into x file)
+                           Mean Fo2/sigma:      14.3
+                           Mean Fo2:            217.2
+
+    Elapsed time [s]:      26.2
+
+ 04-Jul-2019 09:26  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          4845    14.34          0     0.00
+    C            h + k = 2n                 2376    14.31       2469    14.37
+    A            k + l = 2n                 2437    14.16       2408    14.54
+    B            h + l = 2n                 2416    14.56       2429    14.14
+    F            h+k=2n, k+l=2n, h+l=2n     1192    14.34       3653    14.35
+    I            h + k + l = 2n             2429    14.07       2416    14.62
+    R obverse   -h + k + l = 3n             1614    14.08       3231    14.48
+    R reverse    h - k + l = 3n             1626    13.97       3219    14.54
+
+    Cell parameters [A,°]:                 4.12 7.38 20.84 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           4845
+    Absorption correction?                 no
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           4672        1.04      0.2768
+    triclinic        -1                             3365        1.44      0.1453
+    monoclinic       2/m    ->  unique axis b       2001        2.42      0.1880
+    monoclinic       2/m    ->  unique axis c       1897        2.55      0.1572
+    monoclinic       2/m    ->  unique axis a       1965        2.47      0.1761
+    orthorhombic     mmm                            1152        4.21      0.1931
+    tetragonal       4/m                            1327        3.65      0.4741
+    tetragonal       4/mmm                           839        5.77      0.5000
+    trigonal         -3                             2119        2.29      0.6910
+    trigonal         -3m    ->  -31m                1375        3.52      0.7629
+    trigonal         -3m    ->  -3m1                1456        3.33      0.7737
+    hexagonal        6/m                            1151        4.21      0.6490
+    hexagonal        6/mmmm                          841        5.76      0.7543
+    cubic            m-3                             896        5.41      0.4939
+    cubic            m-3m                            625        7.75      0.7074
+
+ 04-Jul-2019 09:27  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1214   7.3822  20.8430   90.000   90.000   90.000
+    Esds:                  0.0005   0.0012   0.0024    0.000    0.000    0.000
+    Volume, esd:           634.15,  0.15
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.373 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.100 mm-1
+
+ 04-Jul-2019 09:27  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          4845    14.34          0     0.00
+    C            h + k = 2n                 2376    14.31       2469    14.37
+    A            k + l = 2n                 2437    14.16       2408    14.54
+    B            h + l = 2n                 2416    14.56       2429    14.14
+    F            h+k=2n, k+l=2n, h+l=2n     1192    14.34       3653    14.35
+    I            h + k + l = 2n             2429    14.07       2416    14.62
+    R obverse   -h + k + l = 3n             1614    14.08       3231    14.48
+    R reverse    h - k + l = 3n             1626    13.97       3219    14.54
+
+    Cell parameters [A,°]:                 4.12 7.38 20.84 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           4845
+    Absorption correction?                 yes
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           4672        1.04      0.2150
+    triclinic        -1                             3365        1.44      0.1427
+    monoclinic       2/m    ->  unique axis b       2001        2.42      0.1637
+    monoclinic       2/m    ->  unique axis c       1897        2.55      0.1594
+    monoclinic       2/m    ->  unique axis a       1965        2.47      0.1423
+    orthorhombic     mmm                            1152        4.21      0.1660
+    tetragonal       4/m                            1327        3.65      0.4729
+    tetragonal       4/mmm                           839        5.77      0.5132
+    trigonal         -3                             2119        2.29      0.7084
+    trigonal         -3m    ->  -31m                1375        3.52      0.7741
+    trigonal         -3m    ->  -3m1                1456        3.33      0.7838
+    hexagonal        6/m                            1151        4.21      0.6746
+    hexagonal        6/mmmm                          841        5.76      0.7675
+    cubic            m-3                             896        5.41      0.5427
+    cubic            m-3m                            625        7.75      0.7507
+
+ 04-Jul-2019 09:27  ----------------- Laue Analyzer (hkl File) -----------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.84 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+    I/sigma(I) scaling:                    1.00
+    2theta range [°]:                      0.0  -  180.0
+    Run range:                             1  -  99
+    I/sigma(I) range:                      -999999.0  -  999999.0
+    Absorption correction?                 yes
+    Decay correction?                      not possible
+    Previous scaling?                      not possible
+    New scaling?                           not possible
+    Spherical absorption correction?       no
+    Include overflows and Lorentz refls.?  no
+    Include satellites?                    no
+    Reject outliers? (Coefficients:)       yes (0.050, 0.000, 0.000, 1.000)
+                                           R(int):  0.1660 -> 0.1134
+                                           N(unmerged):  4845 -> 4247
+                                           N(outliers):  598
+                                           N(unique):  1152 -> 1152
+                                           <Redundancy>:  4.2 -> 3.7
+    Write run numbers as batch numbers?    no
+    Write direction cosines?               no
+    Saved reflections, <I/sigma(I)>:       4247,  13.6
+
+ 04-Jul-2019 09:38  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1214   7.3822  20.8430   90.000   90.000   90.000
+    Esds:                  0.0005   0.0012   0.0024    0.000    0.000    0.000
+    Volume, esd:           634.15,  0.15
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.373 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.100 mm-1
+
+ 04-Jul-2019 09:51  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          4845    14.34          0     0.00
+    C            h + k = 2n                 2376    14.31       2469    14.37
+    A            k + l = 2n                 2437    14.16       2408    14.54
+    B            h + l = 2n                 2416    14.56       2429    14.14
+    F            h+k=2n, k+l=2n, h+l=2n     1192    14.34       3653    14.35
+    I            h + k + l = 2n             2429    14.07       2416    14.62
+    R obverse   -h + k + l = 3n             1614    14.08       3231    14.48
+    R reverse    h - k + l = 3n             1626    13.97       3219    14.54
+
+    Cell parameters [A,°]:                 4.12 7.38 20.84 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           4845
+    Absorption correction?                 yes
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           4672        1.04      0.0694
+    triclinic        -1                             3365        1.44      0.0522
+    monoclinic       2/m    ->  unique axis b       2001        2.42      0.0604
+    monoclinic       2/m    ->  unique axis c       1897        2.55      0.0605
+    monoclinic       2/m    ->  unique axis a       1965        2.47      0.0583
+    orthorhombic     mmm                            1152        4.21      0.0653
+    tetragonal       4/m                            1327        3.65      0.3996
+    tetragonal       4/mmm                           839        5.77      0.4439
+    trigonal         -3                             2119        2.29      0.6548
+    trigonal         -3m    ->  -31m                1375        3.52      0.7309
+    trigonal         -3m    ->  -3m1                1456        3.33      0.7455
+    hexagonal        6/m                            1151        4.21      0.6019
+    hexagonal        6/mmmm                          841        5.76      0.7200
+    cubic            m-3                             896        5.41      0.4265
+    cubic            m-3m                            625        7.75      0.6839
+
+ 04-Jul-2019 09:52  ----------------- Laue Analyzer (hkl File) -----------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.84 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+    I/sigma(I) scaling:                    1.00
+    2theta range [°]:                      0.0  -  180.0
+    Run range:                             1  -  99
+    I/sigma(I) range:                      -999999.0  -  999999.0
+    Absorption correction?                 yes
+    Decay correction?                      not possible
+    Previous scaling?                      not possible
+    New scaling?                           not possible
+    Spherical absorption correction?       no
+    Include overflows and Lorentz refls.?  no
+    Include satellites?                    no
+    Reject outliers? (Coefficients:)       yes (0.050, 0.000, 0.000, 1.000)
+                                           R(int):  0.0653 -> 0.0467
+                                           N(unmerged):  4845 -> 4390
+                                           N(outliers):  455
+                                           N(unique):  1152 -> 1152
+                                           <Redundancy>:  4.2 -> 3.8
+    Write run numbers as batch numbers?    no
+    Write direction cosines?               no
+    Saved reflections, <I/sigma(I)>:       4390,  13.4
+
+ 04-Jul-2019 10:18  ---------------- Building reciprocal space -----------------
+
+    Runs/frames:           Available:           0 run(s), 129 frames
+                           Selected:            Run  1    Frames   1 - 129
+                                                Run  2    Frames   1 -   0
+                                                Run  3    Frames   1 -   0
+                                                Run  4    Frames   1 -   0
+                                                Run  5    Frames   1 -   0
+
+    Conditions for array:  XYZ(min)  [A-1]:     -1.0000
+                           XYZ(max)  [A-1]:     1.0000
+                           Increment [A-1]:     0.0040
+                           Correct positions:   yes
+                           Repair tiny holes:   yes
+                           Subpixels (X,Y):     1 (proposal: 1)
+                           Subpixels (omega):   3 (proposal: 7)
+
+    Frames selected:       2Theta range:        2.5 - 62.1
+                           Pixels:              2267 x 2267
+                           Maximum d* [A-1]:    1.451
+
+    3D array (cube):       2theta range [deg]:  0.0 - 76.0
+                           Voxels (edge):       501
+                           Voxels (total):      125751501
+                           Memory [MB]:         479
+                           Coverage:            65.159 %
+                           Tiny holes:          0.719 %, 593092
+                           Elapsed time:        5.1 min
+
+ 05-Jul-2019 08:24  -------------------- End of measurement --------------------
+
+    Run #1 ( done )
+    Run #2 (12 frames measured out of 180)
+    Run #3 ( not measured )
+    Run #4 ( not measured )
+    Run #5 ( not measured )
+
+    Measured runs                        : 1 (out of 5)
+    Measured frames                      : 192 (out of 900)
+    Remeasured frames with filter        : 0
+    Statistics over all measured frames
+      Mean minimum pixel intensity       : 8.0
+      Mean average pixel intensity       : 19.5
+      Mean maximum pixel intensity       : 6729.0
+      Total number of overflow pixels    : 8
+
+ 05-Jul-2019 10:03  ----------------------- Peak search ------------------------
+
+    Selected runs/frames ( available: 1 runs, 192 frames ) :
+    Run  1   Frames  1,180
+    Run  2   Frames  1, 12
+
+    Min, max 2Theta  :  0.0, 60.0        New peaklist : Yes
+
+    11384 Peaks found, deleted 1417, independent 9338
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7694 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1203   7.3836  20.8451  90.000  90.000  90.000    634.17
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235277  -0.029972  -0.005092
+                        -0.009097  -0.039801   0.045819
+                        -0.058868   0.125937   0.013269
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7691 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1202   7.3837  20.8451  90.000  90.000  90.000    634.15
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235285  -0.029973  -0.005093
+                        -0.009102  -0.039802   0.045819
+                        -0.058874   0.125935   0.013269
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7690 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1202   7.3837  20.8451  90.000  90.000  90.000    634.15
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235285  -0.029973  -0.005093
+                        -0.009102  -0.039803   0.045819
+                        -0.058874   0.125935   0.013269
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7690 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1202   7.3837  20.8451  90.000  90.000  90.000    634.15
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235285  -0.029973  -0.005093
+                        -0.009102  -0.039803   0.045819
+                        -0.058874   0.125935   0.013269
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7690 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1202   7.3837  20.8451  90.000  90.000  90.000    634.15
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235285  -0.029973  -0.005093
+                        -0.009102  -0.039803   0.045819
+                        -0.058874   0.125935   0.013269
+
+ 05-Jul-2019 10:03  --------------------- Cell refinement ----------------------
+
+    Number of indexed peaks used = 7690 out of 9338
+
+    Min, max 2Theta : 3.94, 60.01
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1202   7.3837  20.8451  90.000  90.000  90.000    634.15
+    Esds :   0.0004   0.0009   0.0020   0.000   0.000   0.000      0.12
+    Fit  :   0.0074
+
+    Orienting matrix :  -0.235285  -0.029973  -0.005093
+                        -0.009102  -0.039803   0.045819
+                        -0.058874   0.125935   0.013269
+
+ 05-Jul-2019 10:05  ----------------------- Integration ------------------------
+
+    Domains:               S:\Pöttgen\Pr53\Pr53.x
+
+    Runs/frames:           Available:           1 run(s), 192 frames
+                           Selected:            Run  1    Frames  1 - 180
+                                                Run  2    Frames  1 -  12
+
+    Setup:                 Use filter frames:   OFF
+                           Overlap check:       ON, 0 % tolerance
+                           Wavelengths:         Mo  0.70930, 0.71359  (0.71073)
+                           Apply q vectors:     OFF
+                           Apply shading masks: OFF
+                           Apply beamstop mask: OFF
+                           Apply 2nd b.s. mask: OFF
+                           Shading by HPC:      OFF
+                           Control refls.:      50  200  (I/sigma >= 6.0)
+
+    Advanced:              Profiles:            elliptical
+                           Vary slopes:         ON
+                           C.-of-grav. checks:  2, 1 (weaker), 0 (weakest)
+                           Corr. sphere dist.:  20 %
+                           Pixel int. offset:   0.0
+                           Pixel int. factor:   1.0
+                           Background area:     1.2 times the peak area
+                           Refine matrix:       ON
+                           Init. ctrl. refls.:  OFF
+                           Corrections:         L P A -
+                           Lorentz correction:  min: 0.0100, max: 1.2736
+                           Polarisat. factor:   min: 0.5840, max: 0.9995
+                           Air transmission:    min: 0.9720, max: 0.9881
+                           Min. Lorentz factor: 0.010
+                           Mono. d*, orient.:   0.298151, 0.0
+                           Dir. cos. method:    flexible
+                           Cut off refls.:      ON (95.0 % of max. radius)
+                           Dir. cos., hkl file: ON
+                           Merge reflections:   OFF
+                           Scaling mode:        autom. due to overall Fo2(max)
+
+    Parameters:            A, B, EMS:           14.0  -2.0  0.020
+
+    Main statistics:       Mean intensity:      835 - 8946
+                           Control refl.:       18 - 48
+                           Mean chi^2*10000:    0.00 - 0.13
+                           Cell volume:         634.0 - 635.8
+                           Delta(max) [%]:      0.2 0.2 0.1  0.1 0.1 0.2  0.3
+                           Scale factor:        0.0430494, proposed: 0.0430494
+
+    hkl output:            S:\Pöttgen\Pr53\Pr53.hkl
+                           Overlapped:          0  (rejected)
+                           Overflowed:          2  (omitted but x file)
+                           Lorentz zone:        24  (omitted but x file)
+                           Saved reflections:   7195  (7221 into x file)
+                           Mean Fo2/sigma:      15.5
+                           Mean Fo2:            237.8
+
+    Elapsed time [s]:      39.4
+
+ 05-Jul-2019 10:07  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1202   7.3837  20.8451   90.000   90.000   90.000
+    Esds:                  0.0004   0.0009   0.0020    0.000    0.000    0.000
+    Volume, esd:           634.15,  0.12
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.373 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.100 mm-1
+
+ 05-Jul-2019 10:08  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          7195    15.49          0     0.00
+    C            h + k = 2n                 3580    15.24       3615    15.74
+    A            k + l = 2n                 3614    15.23       3581    15.76
+    B            h + l = 2n                 3597    15.86       3598    15.13
+    F            h+k=2n, k+l=2n, h+l=2n     1798    15.35       5397    15.54
+    I            h + k + l = 2n             3611    15.49       3584    15.50
+    R obverse   -h + k + l = 3n             2402    15.43       4793    15.53
+    R reverse    h - k + l = 3n             2413    15.46       4782    15.51
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           7195
+    Absorption correction?                 no
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           5866        1.23      0.2263
+    triclinic        -1                             3541        2.03      0.1766
+    monoclinic       2/m    ->  unique axis b       2012        3.58      0.2178
+    monoclinic       2/m    ->  unique axis c       1946        3.70      0.1874
+    monoclinic       2/m    ->  unique axis a       1991        3.61      0.2196
+    orthorhombic     mmm                            1155        6.23      0.2248
+    tetragonal       4/m                            1328        5.42      0.5150
+    tetragonal       4/mmm                           840        8.57      0.5241
+    trigonal         -3                             2155        3.34      0.6386
+    trigonal         -3m    ->  -31m                1384        5.20      0.7568
+    trigonal         -3m    ->  -3m1                1469        4.90      0.7596
+    hexagonal        6/m                            1160        6.20      0.6509
+    hexagonal        6/mmmm                          843        8.53      0.7657
+    cubic            m-3                             899        8.00      0.5145
+    cubic            m-3m                            625       11.51      0.7261
+
+ 05-Jul-2019 10:16  --------------------- Cell refinement ----------------------
+
+    Number of control reflections used = 6155 out of 6155
+
+    Min, max 2Theta : 3.91, 61.76
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1200   7.3834  20.8498  90.000  90.000  90.000    634.24
+    Esds :   0.0002   0.0005   0.0011   0.000   0.000   0.000      0.07
+    Fit  :   0.0036
+
+    Orienting matrix :  -0.235317  -0.029930  -0.005086
+                        -0.009092  -0.039814   0.045808
+                        -0.058793   0.125947   0.013272
+
+ 05-Jul-2019 10:16  --------------------- Cell refinement ----------------------
+
+    Number of control reflections used = 6137 out of 6155
+
+    Min, max 2Theta : 3.91, 61.76
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1200   7.3833  20.8491  90.000  90.000  90.000    634.21
+    Esds :   0.0002   0.0005   0.0011   0.000   0.000   0.000      0.07
+    Fit  :   0.0035
+
+    Orienting matrix :  -0.235316  -0.029930  -0.005086
+                        -0.009092  -0.039815   0.045809
+                        -0.058793   0.125949   0.013272
+
+ 05-Jul-2019 10:17  ------------ Cell/modulation vectors refinement ------------
+
+    Number of control reflections used = 4016 out of 6155
+
+    Min, max 2Theta : 3.91, 61.64
+
+    Crystal system  : Orthorhombic
+
+    Cell :   4.1197   7.3848  20.8501  90.000  90.000  90.000    634.33
+    Esds :   0.0003   0.0005   0.0015   0.000   0.000   0.000      0.08
+    Fit  :   0.0027
+
+    Orienting matrix :  -0.235329  -0.029919  -0.005094
+                        -0.009116  -0.039849   0.045802
+                        -0.058802   0.125912   0.013285
+
+ 05-Jul-2019 10:17  -------------------- Crystal Parameters --------------------
+
+    Title:                 Pr53 JB67 B2K4 EuPt3Ga5 J. Bönnighausen 2019_07_02
+
+    Colour:
+    Shape:
+    Size, radius:          0.000 x 0.000 x 0.000 mm3,  0.000 mm
+
+    Crystal system:        orthorhombic
+    Lattice type:          P
+    Laue class:            m m m
+    Space group:
+    Cell:                  4.1197   7.3848  20.8501   90.000   90.000   90.000
+    Esds:                  0.0003   0.0005   0.0015    0.000    0.000    0.000
+    Volume, esd:           634.33,  0.08
+
+    Z, sum formula:        4.000   Eu Pt3 Ga5
+    Molecular weight:      1085.813
+    Density (calc.):       11.370 g cm-3 (Mg m-3)
+    Mean atomic volume:    17.6
+    Linear abs. coeff.:    96.070 mm-1
+
+ 05-Jul-2019 10:17  ----------------- Laue Analyzer (Analysis) -----------------
+
+    Lattice      Condition(s)               N(+)  I/Sigma(+)    N(-)  I/Sigma(-)
+    ----------------------------------------------------------------------------
+    P            -                          7195    15.49          0     0.00
+    C            h + k = 2n                 3580    15.24       3615    15.74
+    A            k + l = 2n                 3614    15.23       3581    15.76
+    B            h + l = 2n                 3597    15.86       3598    15.13
+    F            h+k=2n, k+l=2n, h+l=2n     1798    15.35       5397    15.54
+    I            h + k + l = 2n             3611    15.49       3584    15.50
+    R obverse   -h + k + l = 3n             2402    15.43       4793    15.53
+    R reverse    h - k + l = 3n             2413    15.46       4782    15.51
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Highest-possible crystal system:       orthorhombic
+    Lattice type:                          P
+    Maximum 2theta [°]:                    61
+    Reflections used for R(int):           7195
+    Absorption correction?                 yes
+    Decay correction?                      no
+    Apply previous scaling?                no
+
+    Crystal system   Laue class                  N(unique)   Redundancy   R(int)
+    ----------------------------------------------------------------------------
+    'triclinic'      'identical hkl only'           5866        1.23      0.0554
+    triclinic        -1                             3541        2.03      0.0529
+    monoclinic       2/m    ->  unique axis b       2012        3.58      0.0629
+    monoclinic       2/m    ->  unique axis c       1946        3.70      0.0616
+    monoclinic       2/m    ->  unique axis a       1991        3.61      0.0631
+    orthorhombic     mmm                            1155        6.23      0.0669
+    tetragonal       4/m                            1328        5.42      0.4558
+    tetragonal       4/mmm                           840        8.57      0.4599
+    trigonal         -3                             2155        3.34      0.5887
+    trigonal         -3m    ->  -31m                1384        5.20      0.7189
+    trigonal         -3m    ->  -3m1                1469        4.90      0.7214
+    hexagonal        6/m                            1160        6.20      0.5999
+    hexagonal        6/mmmm                          843        8.53      0.7272
+    cubic            m-3                             899        8.00      0.4347
+    cubic            m-3m                            625       11.51      0.6948
+
+ 05-Jul-2019 10:18  ----------------- Laue Analyzer (Scaling) ------------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+
+    Frame scaling:
+    
+       R(int) at the beginning: 	0.0669	(100 %)
+       R(int) after subcycle  1:  	0.0634	( 95 %)
+       R(int) after subcycle  2:  	0.0633	( 95 %)
+       R(int) after subcycle  3:  	0.0633	( 95 %)
+    
+       4583 (l.s.) out of 7195 (Rint) out of 7221 (x file) reflections
+       used for the optimization.
+    
+       Statistics over combined scale factors for x file reflections:
+       min. = 0.960 (run 1)   max. = 1.043 (run 1)    spread = 0.1
+
+    Statistis over scale factors for least-squares reflections:
+                                  min.       mean       max.     spread    cond.
+       Methods combined:         0.960      1.000      1.043      0.083
+       Frame      scaling:       0.960      1.000      1.043      0.083      1
+       Detector X scaling:       1.000      1.000      1.000      0.000      -
+       Detector Y scaling:       1.000      1.000      1.000      0.000      -
+       Detector r scaling:       1.000      1.000      1.000      0.000      -
+       Beam(in)   scaling:       1.000      1.000      1.000      0.000      -
+       Beam(out)  scaling:       1.000      1.000      1.000      0.000      -
+
+ 05-Jul-2019 10:18  ----------------- Laue Analyzer (Scaling) ------------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+
+    Frame scaling:
+    
+       R(int) at the beginning: 	0.0633	(100 %)
+       R(int) after subcycle  1:  	0.0631	(100 %)
+       R(int) after subcycle  2:  	0.0631	(100 %)
+    
+       4592 (l.s.) out of 7195 (Rint) out of 7221 (x file) reflections
+       used for the optimization.
+    
+       Statistics over combined scale factors for x file reflections:
+       min. = 0.944 (run 2)   max. = 1.059 (run 1)    spread = 0.1
+
+    Statistis over scale factors for least-squares reflections:
+                                  min.       mean       max.     spread    cond.
+       Methods combined:         0.944      1.000      1.059      0.115
+       Frame      scaling:       0.944      1.000      1.059      0.115      2
+       Detector X scaling:       1.000      1.000      1.000      0.000      -
+       Detector Y scaling:       1.000      1.000      1.000      0.000      -
+       Detector r scaling:       1.000      1.000      1.000      0.000      -
+       Beam(in)   scaling:       1.000      1.000      1.000      0.000      -
+       Beam(out)  scaling:       1.000      1.000      1.000      0.000      -
+
+ 05-Jul-2019 10:18  ----------------- Laue Analyzer (Scaling) ------------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+
+    Frame scaling:
+    
+       R(int) at the beginning: 	0.0631	(100 %)
+       R(int) after subcycle  1:  	0.0619	( 98 %)
+       R(int) after subcycle  2:  	0.0619	( 98 %)
+       R(int) after subcycle  3:  	0.0619	( 98 %)
+    
+       4592 (l.s.) out of 7195 (Rint) out of 7221 (x file) reflections
+       used for the optimization.
+    
+       Statistics over combined scale factors for x file reflections:
+       min. = 0.930 (run 2)   max. = 1.041 (run 1)    spread = 0.1
+
+    Statistis over scale factors for least-squares reflections:
+                                  min.       mean       max.     spread    cond.
+       Methods combined:         0.930      1.000      1.041      0.111
+       Frame      scaling:       0.930      1.000      1.041      0.111      3
+       Detector X scaling:       1.000      1.000      1.000      0.000      -
+       Detector Y scaling:       1.000      1.000      1.000      0.000      -
+       Detector r scaling:       1.000      1.000      1.000      0.000      -
+       Beam(in)   scaling:       1.000      1.000      1.000      0.000      -
+       Beam(out)  scaling:       1.000      1.000      1.000      0.000      -
+
+ 05-Jul-2019 10:19  ----------------- Laue Analyzer (hkl File) -----------------
+
+    Cell parameters [A,°]:                 4.12 7.38 20.85 90.0 90.0 90.0
+    Crystal system, Laue class:            orthorhombic,  mmm
+    Keep Friedel pairs separate?           no
+    Lattice type:                          P
+    I/sigma(I) scaling:                    1.00
+    2theta range [°]:                      0.0  -  180.0
+    Run range:                             1  -  99
+    I/sigma(I) range:                      -999999.0  -  999999.0
+    Absorption correction?                 yes
+    Decay correction?                      not possible
+    Previous scaling?                      not possible
+    New scaling?                           no
+    Spherical absorption correction?       no
+    Include overflows and Lorentz refls.?  no
+    Include satellites?                    no
+    Reject outliers? (Coefficients:)       yes (0.050, 0.000, 0.000, 1.000)
+                                           R(int):  0.0619 -> 0.0459
+                                           N(unmerged):  7195 -> 6561
+                                           N(outliers):  634
+                                           N(unique):  1155 -> 1155
+                                           <Redundancy>:  6.2 -> 5.7
+    Write run numbers as batch numbers?    no
+    Write direction cosines?               no
+    Saved reflections, <I/sigma(I)>:       6561,  14.6

@@ -1,0 +1,14 @@
+atomich parameters.py
+
+* get rid of while loop and move logic to for loop / avoid iterating over line twice
+
+
+main.py
+* split up ui and shell code in separate files
+* unify language e.g. abfrage_variable and su_eingabe. i'd stick to english all the time 
+
+single_cristal_data
+
+* get rid of try/expect in for loop (expect case will never be reached due to if statement)
+	attention: there are some errors which can appear especially in the lower part of the function
+
