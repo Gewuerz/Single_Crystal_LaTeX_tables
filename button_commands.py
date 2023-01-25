@@ -12,23 +12,26 @@ from anisotropic_displacement import make_anisotropic_displacement_table
 from tkinter import messagebox
 from tkinter import filedialog
 
+
 def browse_files_cif():
     """Open a file browser to select the .cif file"""
     file = filedialog.askopenfile(initialdir="/", title="Datei auswählen",
                                   filetypes=(
-                                          ("Crystallographic Information File", ".cif"),
-                                    ))
+                                      ("Crystallographic Information File", ".cif"),
+                                  ))
     return file
+
 
 def browse_files_lxr_sum():
     """Open a file browser to select the .lxr or .sum file
     the .lxr and .sum files are not UTF-8 encoded and cannot be correctly opened with askopenfile()"""
     filename = filedialog.askopenfilename(initialdir="/", title="Datei auswählen",
-                                  filetypes=(
-                                          ("Einkristalldaten", ".lxr .sum"),
-                                    ))
+                                          filetypes=(
+                                              ("Einkristalldaten", ".lxr .sum"),
+                                          ))
     file = open(filename, "r", encoding="windows-1254")
     return file
+
 
 def close_files(cif_file, lxr_file, sum_file):
     try:
@@ -44,11 +47,13 @@ def close_files(cif_file, lxr_file, sum_file):
     except AttributeError:
         pass
 
+
 def check_file(file):
     if not file:
         return False
     else:
         return True
+
 
 def correct_file_encoding(file, new_filename, encoding_to="UTF_8"):
     """A function that will make sure that the files used are utf-8"""

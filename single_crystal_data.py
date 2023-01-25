@@ -15,18 +15,20 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
     volume = "0"
     molecular_weight = "0"
     density = "0"
-    temperature ="0"
+    temperature = "0"
     diffractometer = "0"
     wavelength = "0"
-    number_of_reflections  = "0"
+    number_of_reflections = "0"
     structure_factor = "0"
     e_density_max = "0"
-    e_density_min ="0"
+    e_density_min = "0"
     number_of_independent_reflections = "0"
-    r_no_of_independent_reflections  = "0"
+    r_no_of_independent_reflections = "0"
     number_of_independent_reflections_i = "0"
     r_no_of_independent_reflections_i = "0"
-    data = "0"; parameter = "0"; gof = "0"
+    data = "0"
+    parameter = "0"
+    gof = "0"
     extinction_coeff = "0"
     r_factor_i = "0"
     wr_factor_i = "0"
@@ -42,16 +44,15 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
     # set all variables assigned in the sum_file to be "0"
     crystal_measurements = []
     parameters = []
-    detector_distance ="0"
-    exposure_time ="0"
+    detector_distance = "0"
+    exposure_time = "0"
     omega_split = "0"
     omega_inc = "0"
-
 
     lines_cif = cif_file.readlines()
 
     for line in lines_cif:
-        #Get all the info from the .cif file, include error message if a value isn't there
+        # Get all the info from the .cif file, include error message if a value isn't there
         if "_cell_length_a" in line:
             length_a = line.strip("_cell_length_a \n")
         if "_cell_length_b" in line:
@@ -114,13 +115,14 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
         #  Search for min/max transmission and absorption coefficient
         if "Min and max Transmission" in line:
             transmission_split = line.strip("Min and max Transmission : \n").split(",")
-            #transmission_split = transmission.split(",")
+            # transmission_split = transmission.split(",")
         if "Absorption Coefficient" in line:
             absorption_coeff = line.strip("Absorption Coefficient   : \n")
             absorption_coeff = absorption_coeff.strip("mm^⁻1")
         if "Minimum and maximum H,K,L" in line:
             try:
-                hkl_all = line.strip("Minimum and maximum H,K,L  : \n").split("   ") # splits into positive and negative hkl
+                hkl_all = line.strip("Minimum and maximum H,K,L  : \n").split(
+                    "   ")  # splits into positive and negative hkl
                 hkl_split = hkl_all[0].split(",") + hkl_all[1].split(",")
             except IndexError:
                 print("There was a problem reading your lxr-file: No h,k,l found.")
@@ -138,7 +140,7 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
             try:
                 # Get the size of the crystal, convert it to a float, then to nm
                 crystal_measurements = line.strip("Size, radius: \n").split("x")
-                #crystal_split = crystal_measurements.split("x")
+                # crystal_split = crystal_measurements.split("x")
                 crystal_measurements[0] = str(float(crystal_measurements[0]) * 100.0)
                 crystal_measurements[1] = str(float(crystal_measurements[1]) * 100.0)
                 # Get rid of the units and the empty radius part
@@ -169,49 +171,56 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
         # Write all the data into a .tex file in a tabular-environment
         table_object.write(
             r"%This is the beginning of the single crystal data table." + "\n"
-            r"\begin{tabular}{lc}" + "\n"
-            r"\toprule" + "\n"
-            r"Gitterparameter ~/~\si{\pico\meter} &   $a =$ \num{" + length_a + r"}\\" + "\n"
-            r"   & $b =$ \num{" + length_b + r"} \\" + "\n"
-            r"   & $c =$ \num{" + length_c + r"}\\ " + " \n"
-            r"Volumen~/~\si{\nano\meter\cubed} & \num{" + volume + r"}\\" + "\n"
-            r"Molare Masse~/~\si{\gram\per\mole}	& \num{" + molecular_weight + r"} \\" + "\n"
-            r"Kristallgröße~/~\si{\micro\meter\cubed} & $" + crystal_measurements[0] + r" \times " +
-            crystal_measurements[1] + r" \times" + crystal_measurements[2] + r"$ \\" + "\n"   # sum-file                                                   
-            r"Berechnete Dichte ~/~\si{\gram\per\centi\meter\cubed}	&\num{" + density + r"} \\" + "\n"
-            r"Diffraktometer & " + diffractometer + r"\\" + "\n"
-            r"Wellenlänge~/~ \si{\angstrom} 	&\num{" + wavelength + r"} \\" + "\n"
-            r"Detektorabstand~/~\si{\milli\meter} & \num{" + detector_distance + r"} \\" + "\n"  # sum-file
-            r"Messzeit ~/~\si{\minute} & \num{" + exposure_time + r"} \\" + "\n"  # sum-file
-            r"Temperature ~/~\si{\kelvin} & \num{" + temperature + r"} \\" + "\n"
-            r"$\omega$-Bereich; Inkrement~/~\si{\degree} &\numrange{" + omega_split[0] + "}{" + omega_split[1] + r"},"
-            r"\num{" + omega_inc + r"};\\" + "\n"  # sum-file
-            r"Integr. Param.~/~A; B; EMS & \num{" + parameters[0] +  r"}; \num{" + parameters[1] +r"}; \num{"
-            +  parameters[2] + r"} \\" + "\n" # sum-file
-            r"Transmission ~(max / min) & \num{" + transmission_split[1] + r"} / \num{" + transmission_split[0] +
+                                                                          r"\begin{tabular}{lc}" + "\n"
+                                                                                                   r"\toprule" + "\n"
+                                                                                                                 r"Gitterparameter ~/~\si{\pico\meter} &   $a =$ \num{" + length_a + r"}\\" + "\n"
+                                                                                                                                                                                              r"   & $b =$ \num{" + length_b + r"} \\" + "\n"
+                                                                                                                                                                                                                                         r"   & $c =$ \num{" + length_c + r"}\\ " + " \n"
+                                                                                                                                                                                                                                                                                    r"Volumen~/~\si{\nano\meter\cubed} & \num{" + volume + r"}\\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                    r"Molare Masse~/~\si{\gram\per\mole}	& \num{" + molecular_weight + r"} \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                                                                                                    r"Kristallgröße~/~\si{\micro\meter\cubed} & $" +
+            crystal_measurements[0] + r" \times " +
+            crystal_measurements[1] + r" \times" + crystal_measurements[
+                2] + r"$ \\" + "\n"  # sum-file                                                   
+                               r"Berechnete Dichte ~/~\si{\gram\per\centi\meter\cubed}	&\num{" + density + r"} \\" + "\n"
+                                                                                                                        r"Diffraktometer & " + diffractometer + r"\\" + "\n"
+                                                                                                                                                                        r"Wellenlänge~/~ \si{\angstrom} 	&\num{" + wavelength + r"} \\" + "\n"
+                                                                                                                                                                                                                                             r"Detektorabstand~/~\si{\milli\meter} & \num{" + detector_distance + r"} \\" + "\n"  # sum-file
+                                                                                                                                                                                                                                                                                                                            r"Messzeit ~/~\si{\minute} & \num{" + exposure_time + r"} \\" + "\n"  # sum-file
+                                                                                                                                                                                                                                                                                                                                                                                            r"Temperature ~/~\si{\kelvin} & \num{" + temperature + r"} \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                             r"$\omega$-Bereich; Inkrement~/~\si{\degree} &\numrange{" +
+            omega_split[0] + "}{" + omega_split[1] + r"},"
+                                                     r"\num{" + omega_inc + r"};\\" + "\n"  # sum-file
+                                                                                      r"Integr. Param.~/~A; B; EMS & \num{" +
+            parameters[0] + r"}; \num{" + parameters[1] + r"}; \num{"
+            + parameters[2] + r"} \\" + "\n"  # sum-file
+                                        r"Transmission ~(max / min) & \num{" + transmission_split[1] + r"} / \num{" +
+            transmission_split[0] +
             r"} \\" + "\n"
-            r"Absorptionskoeffizient~/~mm$^{-1}$	& \num{" + absorption_coeff + r"} \\" + "\n"
-            r"$hkl$-Bereich & \numrange{" + hkl_split[0] + "}{" + hkl_split[3] + r"}; \numrange{" + hkl_split[1]
+                      r"Absorptionskoeffizient~/~mm$^{-1}$	& \num{" + absorption_coeff + r"} \\" + "\n"
+                                                                                                      r"$hkl$-Bereich & \numrange{" +
+            hkl_split[0] + "}{" + hkl_split[3] + r"}; \numrange{" + hkl_split[1]
             + "}{" + hkl_split[4] + r"}; \numrange{" + hkl_split[2] + "}{" + hkl_split[5] + r"}\\" + "\n"  # lxr-file
-            r"$\theta$-Bereich~/~$^{\circ}$ &\numrange{" + two_theta_split[0] + "}{" + two_theta_split[1] + r"}\\"
+                                                                                                     r"$\theta$-Bereich~/~$^{\circ}$ &\numrange{" +
+            two_theta_split[0] + "}{" + two_theta_split[1] + r"}\\"
             + "\n"  # lxr-file
-            r"$F(000)$ &\num{" + structure_factor + r"} \\" + "\n"
-            r"Anzahl Reflexe	&\num{" + number_of_reflections + r"} \\" + "\n"
-            r"Unabhängige Reflexe ~/~$R_{int}$ & \num{" + number_of_independent_reflections + r"} / \num{"
+              r"$F(000)$ &\num{" + structure_factor + r"} \\" + "\n"
+                                                                r"Anzahl Reflexe	&\num{" + number_of_reflections + r"} \\" + "\n"
+                                                                                                                                r"Unabhängige Reflexe ~/~$R_{int}$ & \num{" + number_of_independent_reflections + r"} / \num{"
             + r_no_of_independent_reflections + r"} \\" + "\n"
-            r"Reflexe mit $I \geq 3\sigma(I)$ ~/~$R_\sigma$ & \num{" + number_of_independent_reflections_i
+                                                          r"Reflexe mit $I \geq 3\sigma(I)$ ~/~$R_\sigma$ & \num{" + number_of_independent_reflections_i
             + r"} / \num{" + r_no_of_independent_reflections_i + r"}\\" + "\n"
-            r"Daten / Parameter &\num{" + data + r"} / \num{" + parameter + r"} \\" + "\n"
-            r"\textit{Goodness-of-fit} ~/~ $F^{2}$  & \num{" + gof + r"} \\" + "\n"
-            r"$R$-Werte [$I \geq 3\sigma(I)$] &$R_structure_data = \num{" + r_factor_i + r"}$ \\" + "\n"
-            r"&$wR2 = \num{" + wr_factor_i + r"}$ \\" + "\n"
-            r"$R$-Werte (alle Daten) & $R_structure_data = \num{" + r_factor_all + r"}$ \\" + "\n"
-            r"&$wR2 = \num{" + wr_factor_all + r"}$ \\" + "\n"
-            r"Extinktionskoeffizient	& \num{" + extinction_coeff + r"} \\" + "\n"
-            r"Restelektronendichten~/~\si{\elementarycharge\per\cubic\angstrom} & \num{" + e_density_min + r"} / \num{"
+                                                                          r"Daten / Parameter &\num{" + data + r"} / \num{" + parameter + r"} \\" + "\n"
+                                                                                                                                                    r"\textit{Goodness-of-fit} ~/~ $F^{2}$  & \num{" + gof + r"} \\" + "\n"
+                                                                                                                                                                                                                       r"$R$-Werte [$I \geq 3\sigma(I)$] &$R_structure_data = \num{" + r_factor_i + r"}$ \\" + "\n"
+                                                                                                                                                                                                                                                                                                               r"&$wR2 = \num{" + wr_factor_i + r"}$ \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                           r"$R$-Werte (alle Daten) & $R_structure_data = \num{" + r_factor_all + r"}$ \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                                                                                                             r"&$wR2 = \num{" + wr_factor_all + r"}$ \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           r"Extinktionskoeffizient	& \num{" + extinction_coeff + r"} \\" + "\n"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               r"Restelektronendichten~/~\si{\elementarycharge\per\cubic\angstrom} & \num{" + e_density_min + r"} / \num{"
             + e_density_max + r"}\\" + "\n"
-            r"\bottomrule"
-            r"\end{tabular}"
+                                       r"\bottomrule"
+                                       r"\end{tabular}"
         )
         message = "Your table has been created."
         return message

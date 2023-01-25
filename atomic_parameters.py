@@ -7,7 +7,6 @@
 # Last change: 23.01.2023
 # ----------------------------------------------------------------------------------------------------------------------
 def make_atomic_parameters_table(cif_file, filename_table):
-
     lines_cif = cif_file.readlines()
 
     table_data = []
@@ -21,28 +20,25 @@ def make_atomic_parameters_table(cif_file, filename_table):
         if " _atom_site_disorder_group" in line:
             atomic_parameters = True
 
-
-    # no_of_sites = len(table_data)
-    # print("You're .cif file contains " + str(no_of_sites) + " atom positions.")
-
     with open(filename_table, "a") as table_object:
         table_object.write(r"\begin{tabular}{lcS[table-format = 1.5(2)]S[table-format = 1.5(2)]S[table-format = 1.5(2)]"
                            r"c}"
                            + "\n"
-                           r"\toprule" + "\n"
-                           r"Atom	&\textit{\textit{Wyckoff}-Lage}	&{\textit{x}} &{\textit{y}}	&{\textit{z}} "
-                           r"& S.O.F.\\" + "\n"
-                           r"\midrule" + "\n")
+                             r"\toprule" + "\n"
+                                           r"Atom	&\textit{\textit{Wyckoff}-Lage}	&{\textit{x}} &{\textit{y}}	&{\textit{z}} "
+                                           r"& S.O.F.\\" + "\n"
+                                                           r"\midrule" + "\n")
 
         for element in table_data:
             element = element.lstrip(" ")
             row_data = element.split(" ")
             print(row_data)
-            table_object.write(row_data[0] + " & "+ row_data[7] + "$$" + " & " + row_data[2] + " & " + row_data[3] + " & "
-                               + row_data[4] + " & " + row_data[8] + r" \\" + "\n")
+            table_object.write(
+                row_data[0] + " & " + row_data[7] + "$$" + " & " + row_data[2] + " & " + row_data[3] + " & "
+                + row_data[4] + " & " + row_data[8] + r" \\" + "\n")
 
         table_object.write(r"\bottomrule" + "\n"
-                           r"\end{tabular}")
+                                            r"\end{tabular}")
 
     message = "Your table has been created."
     return message

@@ -13,29 +13,33 @@ cif_file = None
 lxr_file = None
 sum_file = None
 
+
 def open_cif_files():
-    #Use a file browser to open the .cif-file
+    # Use a file browser to open the .cif-file
     global cif_file
     cif_file = browse_files_cif()
     button_text = cif_file.name.split("/")[-1]
     cif_button.configure(text=button_text)
     return cif_file
 
+
 def open_lxr_files():
-    #Use a file browser to open the .lxr-file
+    # Use a file browser to open the .lxr-file
     global lxr_file
     lxr_file = browse_files_lxr_sum()
     button_text = lxr_file.name.split("/")[-1]
     lxr_button.configure(text=button_text)
     return lxr_file
 
+
 def open_sum_files():
-    #Use a file browser to open the .sum-file
-    global  sum_file
+    # Use a file browser to open the .sum-file
+    global sum_file
     sum_file = browse_files_lxr_sum()
     button_text = sum_file.name.split("/")[-1]
     sum_button.configure(text=button_text)
     return sum_file
+
 
 def make_table(cif_file, lxr_file, sum_file, message):
     # Make the selected table
@@ -44,10 +48,12 @@ def make_table(cif_file, lxr_file, sum_file, message):
     message.set(table_decision(option, cif_file, lxr_file, sum_file, tex_table_name))
     return
 
+
 def close_program(cif_file, lxr_file, sum_file):
-    #Make sure all files are closed before exiting the program
+    # Make sure all files are closed before exiting the program
     close_files(cif_file, lxr_file, sum_file)
     window.destroy()
+
 
 # Create the window
 window = Tk()
@@ -57,24 +63,24 @@ window.grid_columnconfigure(0, weight=1)
 message = StringVar()
 message.set("Noch keine Tabelle erzeugt.")
 info_message = Label(window, bg="#F1EEEE", width=40, textvariable=message)
-info_text_1 = Label(window, font="Calibri 14 bold",  bg="#F1EEEE", text="Program zum Erstellen von TeX-Tabellen.\n")
+info_text_1 = Label(window, font="Calibri 14 bold", bg="#F1EEEE", text="Program zum Erstellen von TeX-Tabellen.\n")
 info_text_2 = Label(window, font="Calibri", bg="#F1EEEE", justify=LEFT,
                     text="Für die Erstellung der Strukturverfeinerungsdatentabelle werden alle drei Dateien benötigt!\n"
-                        "Die .cif Datei muss mit Jana oder SHELLX97 erstellt worden sein.\n"
-                        "Die Wyckoff-Lagen sind in den Dateien nicht vollständig enthalten!\n"
-                        "Die erstellten Tabellen benötigen das siunitx-Packet.\n"
-                  )
+                         "Die .cif Datei muss mit Jana oder SHELLX97 erstellt worden sein.\n"
+                         "Die Wyckoff-Lagen sind in den Dateien nicht vollständig enthalten!\n"
+                         "Die erstellten Tabellen benötigen das siunitx-Packet.\n"
+                    )
 
 cif_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .cif-Datei:")
 lxr_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .lxr-Datei")
 sum_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name .sum-Datei:")
 
-cif_button = Button(window, text=".cif Datei öffnen", bg="#E1E6DF", width=20, command= open_cif_files)
-lxr_button = Button(window, text=".lxr Datei öffnen",bg="#E1E6DF", width=20, command=open_lxr_files)
+cif_button = Button(window, text=".cif Datei öffnen", bg="#E1E6DF", width=20, command=open_cif_files)
+lxr_button = Button(window, text=".lxr Datei öffnen", bg="#E1E6DF", width=20, command=open_lxr_files)
 sum_button = Button(window, text=".sum Datei öffnen", bg="#E1E6DF", width=20, command=open_sum_files)
 
 table_tex = Label(window, bg="#F1EEEE", font="Calibri", text="Name für die .tex-Datei (ohne Extension):")
-entry_table= Entry(window, bg="white", width=30)
+entry_table = Entry(window, bg="white", width=30)
 
 question_text = Label(window, font="Calibri", bg="#F1EEEE", text="Was für eine Tabelle soll erstellt werden?")
 question_variable = IntVar()
@@ -85,9 +91,9 @@ R_atomic_positions = Radiobutton(window, bg="#F1EEEE", text="Atomlagen (.cif)", 
 R_displacement_parameters = Radiobutton(window, bg="#F1EEEE", text="Auslenkungsparameter (.cif)",
                                         variable=question_variable, value=3)
 make_table_button = Button(window, bg="#E1E6DF", text="Tabelle erstellen", width="20",
-                    command= lambda: make_table(cif_file, lxr_file, sum_file, message))
+                           command=lambda: make_table(cif_file, lxr_file, sum_file, message))
 close_window = Button(window, bg="#E1E6DF", text="Schließen", width="15",
-                       command= lambda: close_program(cif_file, lxr_file, sum_file))
+                      command=lambda: close_program(cif_file, lxr_file, sum_file))
 
 # Assign a position to each element
 
