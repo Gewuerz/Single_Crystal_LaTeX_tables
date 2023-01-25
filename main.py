@@ -85,10 +85,10 @@ entry_table = Entry(window, bg="white", width=30)
 question_text = Label(window, font="Calibri", bg="#F1EEEE", text="Was für eine Tabelle soll erstellt werden?")
 question_variable = IntVar()
 question_variable.set(1)
-R_structure_data = Radiobutton(window, bg="#F1EEEE", text="Daten der Strukturverfeinerung (.cif, .lxr, .sum)",
+r_structure_data = Radiobutton(window, bg="#F1EEEE", text="Daten der Strukturverfeinerung (.cif, .lxr, .sum)",
                                variable=question_variable, value=1)
-R_atomic_positions = Radiobutton(window, bg="#F1EEEE", text="Atomlagen (.cif)", variable=question_variable, value=2)
-R_displacement_parameters = Radiobutton(window, bg="#F1EEEE", text="Auslenkungsparameter (.cif)",
+r_atomic_positions = Radiobutton(window, bg="#F1EEEE", text="Atomlagen (.cif)", variable=question_variable, value=2)
+r_displacement_parameters = Radiobutton(window, bg="#F1EEEE", text="Auslenkungsparameter (.cif)",
                                         variable=question_variable, value=3)
 make_table_button = Button(window, bg="#E1E6DF", text="Tabelle erstellen", width="20",
                            command=lambda: make_table(cif_file, lxr_file, sum_file, message))
@@ -109,9 +109,9 @@ sum_text.grid(row=5, column=0, padx=5, pady=5)
 sum_button.grid(row=5, column=1, sticky="W", padx=10, pady=5)
 
 question_text.grid(row=6, column=0, padx=5, pady=5)
-R_structure_data.grid(row=6, column=1, sticky="WS", padx=10, pady=5)
-R_atomic_positions.grid(row=7, column=1, sticky="WS", padx=10, pady=5)
-R_displacement_parameters.grid(row=8, column=1, sticky="WS", padx=10, pady=5)
+r_structure_data.grid(row=6, column=1, sticky="WS", padx=10, pady=5)
+r_atomic_positions.grid(row=7, column=1, sticky="WS", padx=10, pady=5)
+r_displacement_parameters.grid(row=8, column=1, sticky="WS", padx=10, pady=5)
 
 table_tex.grid(row=9, column=0, padx=5, pady=5)
 

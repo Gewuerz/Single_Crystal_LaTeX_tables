@@ -7,12 +7,10 @@
 # Last change: 23.01.2023
 # ----------------------------------------------------------------------------------------------------------------------
 def make_atomic_parameters_table(cif_file, filename_table):
-    lines_cif = cif_file.readlines()
-
     table_data = []
     atomic_parameters = False
 
-    for line in lines_cif:
+    for line in cif_file.readlines():
         if " _atom_site_aniso_label" in line:
             break
         if atomic_parameters:

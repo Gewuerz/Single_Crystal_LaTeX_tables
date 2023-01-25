@@ -10,12 +10,10 @@ from uncertainties import *
 
 
 def make_anisotropic_displacement_table(cif_file, filename_table):
-    lines_cif = cif_file.readlines()
-
     table_data = []
     atomic_parameters = False
 
-    for line in lines_cif:
+    for line in cif_file.readlines():
         if " _jana_atom_site_ADP_C_label" in line:
             break
         if atomic_parameters:

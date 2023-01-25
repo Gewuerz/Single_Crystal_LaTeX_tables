@@ -15,11 +15,8 @@ from tkinter import filedialog
 
 def browse_files_cif():
     """Open a file browser to select the .cif file"""
-    file = filedialog.askopenfile(initialdir="/", title="Datei auswählen",
-                                  filetypes=(
-                                      ("Crystallographic Information File", ".cif"),
-                                  ))
-    return file
+    return filedialog.askopenfile(initialdir="/", title="Datei auswählen",
+                                  filetypes=(("Crystallographic Information File", ".cif")))
 
 
 def browse_files_lxr_sum():
@@ -29,8 +26,7 @@ def browse_files_lxr_sum():
                                           filetypes=(
                                               ("Einkristalldaten", ".lxr .sum"),
                                           ))
-    file = open(filename, "r", encoding="windows-1254")
-    return file
+    return open(filename, "r", encoding="windows-1254")
 
 
 def close_files(cif_file, lxr_file, sum_file):

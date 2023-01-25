@@ -49,9 +49,7 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, filen
     omega_split = "0"
     omega_inc = "0"
 
-    lines_cif = cif_file.readlines()
-
-    for line in lines_cif:
+    for line in cif_file.readlines():
         # Get all the info from the .cif file, include error message if a value isn't there
         if "_cell_length_a" in line:
             length_a = line.strip("_cell_length_a \n")
