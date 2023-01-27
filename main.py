@@ -54,9 +54,9 @@ def close_program(cif_file, lxr_file, sum_file):
     close_files(cif_file, lxr_file, sum_file)
     window.destroy()
 
-
 # Create the window
 window = Tk()
+window.resizable(width=False, height=False)
 window.title("LaTeX-Einkristalltabellen")
 window.configure(bg="#F1EEEE")
 window.grid_columnconfigure(0, weight=1)
