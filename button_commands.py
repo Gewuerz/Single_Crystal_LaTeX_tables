@@ -6,11 +6,12 @@
 # author: Judith Bönnighausen
 # Last change: 23.01.2023
 # ----------------------------------------------------------------------------------------------------------------------
-from single_crystal_data import make_single_crystal_data_table
-from atomic_parameters import make_atomic_parameters_table
-from anisotropic_displacement import make_anisotropic_displacement_table
-from tkinter import messagebox
 from tkinter import filedialog
+from tkinter import messagebox
+
+from anisotropic_displacement import make_anisotropic_displacement_table
+from atomic_parameters import make_atomic_parameters_table
+from single_crystal_data import make_single_crystal_data_table
 
 
 def browse_files_cif():
@@ -23,9 +24,15 @@ def browse_files_lxr_sum():
     """Open a file browser to select the .lxr or .sum file
     the .lxr and .sum files are not UTF-8 encoded and cannot be correctly opened with askopenfile()"""
     filename = filedialog.askopenfilename(title="Datei auswählen",
-                                          filetypes=
-                                          [("Einkristalldaten", ".lxr .sum")])
+                                          filetypes=[("Einkristalldaten", ".lxr .sum")])
     return open(filename, "r", encoding="windows-1254")
+
+
+def browse_files_all():
+    """Select all three files at once. They will only be opened in the button command."""
+    filelist = filedialog.askopenfilenames(title="Datei auswählen",
+                                          filetypes=[("Einkristalldateien", ".cif .lxr .sum")])
+    return filelist
 
 
 def close_files(cif_file, lxr_file, sum_file):

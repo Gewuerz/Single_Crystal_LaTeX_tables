@@ -18,6 +18,8 @@ def make_atomic_parameters_table(cif_file, filename_table):
         if " _atom_site_disorder_group" in line:
             atomic_parameters = True
 
+    table_data = table_data[:-2]
+
     with open(filename_table, "a") as table_object:
         table_object.write(r"\begin{tabular}{lcS[table-format = 1.5(2)]S[table-format = 1.5(2)]S[table-format = 1.5(2)]"
                            r"c}"
