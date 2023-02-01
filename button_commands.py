@@ -15,14 +15,14 @@ from tkinter import filedialog
 
 def browse_files_cif():
     """Open a file browser to select the .cif file"""
-    return filedialog.askopenfile(initialdir="/", title="Datei auswählen",
+    return filedialog.askopenfile(title="Datei auswählen",
                                   filetypes=[("Crystallographic Information File", ".cif")])
 
 
 def browse_files_lxr_sum():
     """Open a file browser to select the .lxr or .sum file
     the .lxr and .sum files are not UTF-8 encoded and cannot be correctly opened with askopenfile()"""
-    filename = filedialog.askopenfilename(initialdir="/", title="Datei auswählen",
+    filename = filedialog.askopenfilename(title="Datei auswählen",
                                           filetypes=
                                           [("Einkristalldaten", ".lxr .sum")])
     return open(filename, "r", encoding="windows-1254")
