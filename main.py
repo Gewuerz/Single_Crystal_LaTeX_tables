@@ -15,6 +15,7 @@ lxr_file = None
 sum_file = None
 save_path = ""
 
+
 def open_all_files():
     global cif_file
     global lxr_file
@@ -25,15 +26,12 @@ def open_all_files():
         if ".cif" in file:
             cif_file = open(file, "r", encoding="utf-8")
             cif_text.configure(text=cif_file.name.split("/")[-1])
-            #cif_button.configure(text=cif_file.name.split("/")[-1])
         if ".lxr" in file:
             lxr_file = open(file, "r", encoding="windows-1254")
             lxr_text.configure(text=lxr_file.name.split("/")[-1])
-            #lxr_button.configure(text=lxr_file.name.split("/")[-1])
         if ".sum" in file:
             sum_file = open(file, "r", encoding="windows-1254")
             sum_text.configure(text=sum_file.name.split("/")[-1])
-            #sum_button.configure(text=sum_file.name.split("/")[-1])
     # set a default savepath
     save_path = cif_file.name + ".tex"
     return
@@ -45,16 +43,19 @@ def make_table(cif_file, lxr_file, sum_file, save_path, message):
     message.set(table_decision(option, cif_file, lxr_file, sum_file, save_path))
     return
 
+
 def save_table():
     global save_path
     save_path = select_save_path()
     save_table_button.configure(text=save_path.split("/")[-1])
     return
 
+
 def close_program(cif_file, lxr_file, sum_file):
     # Make sure all files are closed before exiting the program
     close_files(cif_file, lxr_file, sum_file)
     window.destroy()
+
 
 # Create the window
 window = Tk()
@@ -77,7 +78,7 @@ cif_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .cif-Datei
 lxr_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .lxr-Datei")
 sum_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name .sum-Datei")
 all_text = Label(window, font="Calibri", bg="#F1EEEE",
- text="Es können sowohl einzelne, \n als auch alle drei Dateien \n auf einmal geöffnet werden.")
+                 text="Es können sowohl einzelne, \n als auch alle drei Dateien \n auf einmal geöffnet werden.")
 
 all_button = Button(window, text="Dateien öffnen", bg="#C4D4C4", width=20, command=open_all_files)
 
@@ -109,16 +110,13 @@ info_text_1.grid(row=1, column=0, columnspan=4, padx=5, pady=5)
 info_text_2.grid(row=2, column=0, columnspan=4, padx=5, pady=5)
 
 cif_text.grid(row=3, column=1, padx=5, pady=5)
-#cif_button.grid(row=3, column=2, sticky="W", padx=10, pady=5)
 
 lxr_text.grid(row=4, column=1, padx=5, pady=5)
-#lxr_button.grid(row=4, column=2, sticky="W", padx=10, pady=5)
 
 all_text.grid(row=4, rowspan=2, column=0)
 all_button.grid(row=3, column=0)
 
 sum_text.grid(row=5, column=1, padx=5, pady=5)
-#sum_button.grid(row=5, column=2, sticky="W", padx=10, pady=5)
 
 question_text.grid(row=6, column=0, padx=5, pady=5)
 r_structure_data.grid(row=6, column=1, sticky="W", padx=10, pady=5)
