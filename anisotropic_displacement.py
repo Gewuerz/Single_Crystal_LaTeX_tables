@@ -9,7 +9,7 @@
 from uncertainties import *
 
 
-def make_anisotropic_displacement_table(cif_file, filename_table):
+def make_anisotropic_displacement_table(cif_file, save_path):
     table_data = []
     atomic_parameters = False
 
@@ -23,7 +23,7 @@ def make_anisotropic_displacement_table(cif_file, filename_table):
 
     table_data = table_data[:-2]
 
-    with open(filename_table, "a") as table_object:
+    with open(save_path, "a") as table_object:
         table_object.write(r"\begin{tabular}{lcS[table-format = -3(2)]S[table-format = -3(2)]S[table-format = -3(2)]"
                            r"S[table-format = -3(2)]S[table-format = -3(2)]S[table-format = -3(2)]"
                            r"S[table-format = -3(2)]}  "
@@ -93,5 +93,5 @@ def make_anisotropic_displacement_table(cif_file, filename_table):
 
         table_object.write(r"\bottomrule" + "\n"
                                             r"\end{tabular}")
-    message = "Your table has been created."
+    message = save_path.split("/")[-1] + " erzeugt."
     return message

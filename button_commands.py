@@ -31,8 +31,15 @@ def browse_files_lxr_sum():
 def browse_files_all():
     """Select all three files at once. They will only be opened in the button command."""
     filelist = filedialog.askopenfilenames(title="Datei auswählen",
-                                          filetypes=[("Einkristalldateien", ".cif .lxr .sum")])
+                                           filetypes=[("Einkristalldateien", ".cif .lxr .sum")])
     return filelist
+
+
+def select_save_path():
+    """Select the location and name for the file to be saved."""
+    save_path = filedialog.asksaveasfilename(title="Speichern als", filetypes=[("TeX-Dateien", ".tex")],
+                                             defaultextension=".tex")
+    return save_path
 
 
 def close_files(cif_file, lxr_file, sum_file):
@@ -64,16 +71,15 @@ def correct_file_encoding(file, new_filename, encoding_to="UTF_8"):
             fw.write(line[: -1] + "\r\n")
 
 
-def table_decision(decision, cif_file, lxr_file, sum_file, filename_table):
+def table_decision(decision, cif_file, lxr_file, sum_file, save_path):
     """A function that creates the tables"""
     if not check_file(cif_file):
         messagebox.showerror("Fehlende Datei:", ".cif Datei noch nicht ausgewählt")
         return "Fehlende Datei"
-    if filename_table == "":
-        messagebox.showerror("Fehlender Dateiname", "Bitte einen Namen für die Tabelle angeben.")
+    if save_path == "":
+        messagebox.showerror("Fehlender Speicherort",
+                             "Bitte einen Namen & Speicherort für die Tabelle angeben.")
         return "Fehlender Tabellenname"
-
-    filename_table = filename_table + ".tex"
 
     if decision == 1:
         if not check_file(lxr_file):
@@ -86,8 +92,8 @@ def table_decision(decision, cif_file, lxr_file, sum_file, filename_table):
         correct_file_encoding(lxr_file, "lxr_Datei_konvertiert.txt")
         correct_file_encoding(sum_file, "sum_Datei_konvertiert.txt")
         return make_single_crystal_data_table(cif_file, "lxr_Datei_konvertiert.txt", "sum_Datei_konvertiert.txt",
-                                              filename_table)
+                                              save_path)
     elif decision == 2:
-        return make_atomic_parameters_table(cif_file, filename_table)
+        return make_atomic_parameters_table(cif_file, save_path)
     elif decision == 3:
-        return make_anisotropic_displacement_table(cif_file, filename_table)
+        return make_anisotropic_displacement_table(cif_file, save_path)
