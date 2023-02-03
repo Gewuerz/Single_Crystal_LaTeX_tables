@@ -61,40 +61,40 @@ def close_program(cif_file, lxr_file, sum_file):
 window = Tk()
 window.resizable(width=False, height=False)
 window.title("LaTeX-Einkristalltabellen")
-window.configure(bg="#F1EEEE")
+window.configure(bg="#FFFFFF")
 window.grid_columnconfigure(0, weight=1)
 message = StringVar()
 message.set("Noch keine Tabelle erzeugt.")
-info_message = Label(window, bg="#F1EEEE", width=30, textvariable=message)
-info_text_1 = Label(window, font="Calibri 14 bold", bg="#F1EEEE", text="Program zum Erstellen von TeX-Tabellen.\n")
-info_text_2 = Label(window, font="Calibri", bg="#F1EEEE",
+info_message = Label(window, bg="#FFFFFF", width=30, textvariable=message)
+info_text_1 = Label(window, font="Calibri 14 bold", bg="#FFFFFF", text="Program zum Erstellen von TeX-Tabellen.\n")
+info_text_2 = Label(window, font="Calibri", bg="#FFFFFF",
                     text="Für die Erstellung der Strukturverfeinerungsdatentabelle werden alle drei Dateien benötigt!\n"
                          "Die .cif Datei muss mit JANA oder SHELLXL erstellt worden sein.\n"
                          "Die Wyckoff-Lagen sind in den Dateien nicht vollständig enthalten!\n"
                          "Die erstellten Tabellen benötigen das siunitx-Packet.\n"
                     )
 
-cif_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .cif-Datei")
-lxr_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name der .lxr-Datei")
-sum_text = Label(window, font="Calibri", bg="#F1EEEE", text="Name .sum-Datei")
-all_text = Label(window, font="Calibri", bg="#F1EEEE",
+cif_text = Label(window, font="Calibri", bg="#FFFFFF", text="Name der .cif-Datei")
+lxr_text = Label(window, font="Calibri", bg="#FFFFFF", text="Name der .lxr-Datei")
+sum_text = Label(window, font="Calibri", bg="#FFFFFF", text="Name .sum-Datei")
+all_text = Label(window, font="Calibri", bg="#FFFFFF", borderwidth=1, relief="ridge",
                  text="Es können sowohl einzelne, \n als auch alle drei Dateien \n auf einmal geöffnet werden.")
 
-all_button = Button(window, text="Dateien öffnen", bg="#C4D4C4", width=20, command=open_all_files)
+all_button = Button(window, text="Dateien öffnen", bg="#CCDDAA", width=20, command=open_all_files)
 
-table_tex = Label(window, bg="#F1EEEE", font="Calibri",
-                  text="Name für die .tex-Datei (ohne Extension)")
+#table_text = Label(window, bg="#FFFFFF", font="Calibri",
+                  # text="Name für die .tex-Datei (ohne Extension)")
 entry_table = Entry(window, bg="white", width=30)
 
-question_text = Label(window, font="Calibri", bg="#F1EEEE", text="Was für eine Tabelle soll erstellt werden?")
+question_text = Label(window, font="Calibri", bg="#FFFFFF", text="Was für eine Tabelle soll erstellt werden?")
 question_variable = IntVar()
 question_variable.set(1)
 
-r_structure_data = Radiobutton(window, bg="#F1EEEE", justify=LEFT,
+r_structure_data = Radiobutton(window, bg="#FFFFFF", justify=LEFT,
                                text="Daten der Strukturverfeinerung \n (.cif, .lxr, .sum)",
                                variable=question_variable, value=1)
-r_atomic_positions = Radiobutton(window, bg="#F1EEEE", text="Atomlagen (.cif)", variable=question_variable, value=2)
-r_displacement_parameters = Radiobutton(window, bg="#F1EEEE", text="Auslenkungsparameter (.cif)",
+r_atomic_positions = Radiobutton(window, bg="#FFFFFF", text="Atomlagen (.cif)", variable=question_variable, value=2)
+r_displacement_parameters = Radiobutton(window, bg="#FFFFFF", text="Auslenkungsparameter (.cif)",
                                         variable=question_variable, value=3)
 
 save_table_button = Button(window, bg="#E1E6DF", text="Tabelle speichern unter", width="20",
@@ -113,26 +113,26 @@ cif_text.grid(row=3, column=1, padx=5, pady=5)
 
 lxr_text.grid(row=4, column=1, padx=5, pady=5)
 
-all_text.grid(row=4, rowspan=2, column=0)
+all_text.grid(row=3, rowspan=2, column=2, padx=10)
 all_button.grid(row=3, column=0)
 
-sum_text.grid(row=5, column=1, padx=5, pady=5)
+sum_text.grid(row=5, column=1, padx=5, pady=(5,20))
 
 question_text.grid(row=6, column=0, padx=5, pady=5)
 r_structure_data.grid(row=6, column=1, sticky="W", padx=10, pady=5)
 r_atomic_positions.grid(row=7, column=1, sticky="W", padx=10, pady=5)
-r_displacement_parameters.grid(row=8, column=1, sticky="W", padx=10, pady=5)
+r_displacement_parameters.grid(row=8, column=1, sticky="W", padx=10, pady=(5,25))
 
-table_tex.grid(row=9, column=0, padx=5, pady=5)
+#table_text.grid(row=9, column=0, padx=5, pady=5)
 
 # entry_table.grid(row=9, column=1, sticky="W", padx=10, pady=5)
 
-save_table_button.grid(row=9, column=1, padx=10, pady=5)
+save_table_button.grid(row=9, column=0, padx=10, pady=5)
 
-make_table_button.grid(row=10, column=1, padx=10, pady=5)
+make_table_button.grid(row=9, column=1, padx=10, pady=5)
 
 info_message.grid(row=11, column=1, sticky="W", padx=10, pady=5)
 
-close_window.grid(row=12, column=3, sticky="E", padx=5, pady=5)
+close_window.grid(row=12, column=2, sticky="E", padx=5, pady=5)
 
 window.mainloop()
