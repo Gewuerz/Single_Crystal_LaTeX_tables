@@ -6,6 +6,7 @@
 # author: Judith Bönnighausen
 # Last change: 23.01.2023
 # ----------------------------------------------------------------------------------------------------------------------
+import webbrowser
 from tkinter import *
 from tkinter import ttk
 
@@ -50,6 +51,9 @@ class Main:
         self.save_path = select_save_path()
         self.save_table_button.configure(text=self.save_path.split("/")[-1])
         return
+
+    def callback(self, url):
+        webbrowser.open_new(url)
 
     def close_program(self):
         # Make sure all files are closed before exiting the program
@@ -110,6 +114,12 @@ class Main:
         self.make_table_button = Button(self.window, bg="#E1E6DF", font="Calibri 11", text="Tabelle erstellen",
                                         width="20",
                                         command=self.make_table)
+
+        self.copyright = Label(self.window, font="Calibri", bg="#FFFFFF", text=" © 2022-2023 Judith Bönnighausen")
+        self.github_link = Label(self.window, font="Calibri 12 bold", bg="#FFFFFF", fg="#034748", text="GitHub",
+                                 cursor="hand2")
+        self.github_link.bind("<Button-1>",
+                              lambda e: self.callback("https://github.com/Gewuerz/Single_Crystal_LaTeX_tables"))
         self.close_window = Button(self.window, bg="#E1E6DF", font="Calibri 11", text="Schließen", width="15",
                                    command=self.close_program)
 
@@ -131,7 +141,7 @@ class Main:
 
         self.separator2.grid(row=7, columnspan=3, sticky="WE")
 
-        self.question_text.grid(row=8, column=0, padx=5, pady=5)
+        self.question_text.grid(row=8, column=0, padx=10, pady=5)
         self.r_structure_data.grid(row=8, column=1, sticky="W", padx=10, pady=5)
         self.r_atomic_positions.grid(row=9, column=1, sticky="W", padx=10, pady=5)
         self.r_displacement_parameters.grid(row=10, column=1, sticky="W", padx=10, pady=(5, 25))
@@ -142,7 +152,10 @@ class Main:
 
         self.info_message.grid(row=13, column=1, sticky="W", padx=10, pady=5)
 
-        self.close_window.grid(row=14, column=2, sticky="E", padx=15, pady=10)
+        self.close_window.grid(row=14, column=2, sticky="E", padx=15, pady=15)
+
+        self.copyright.grid(row=14, column=0, sticky="W", padx=5, pady=10)
+        self.github_link.grid(row=14, column=0, sticky="E", padx=5, pady=10)
 
         self.window.mainloop()
 
