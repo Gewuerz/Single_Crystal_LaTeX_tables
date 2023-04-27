@@ -6,6 +6,9 @@
 # author: Judith Bönnighausen
 # Last change: 23.01.2023
 # ----------------------------------------------------------------------------------------------------------------------
+import re
+
+
 def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, save_path):
     """ Function to create the single crystal data table."""
     # set all variables assigned in the cif_file to be "0"
@@ -134,6 +137,7 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, save_
         lines_sum = file_object.readlines()
 
     for line in lines_sum:
+        line = re.sub(r"\s+", " ", line)
         if "Size, radius:" in line:
             try:
                 # Get the size of the crystal, convert it to a float, then to nm
@@ -151,8 +155,8 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, save_
                 print("There was a problem reading your sum-file: No crystal size found.")
         if "Detector distance" in line:
             detector_distance = line.strip("Detector distance [mm] : \n")
-        if "Parameters:" in line:
-            parameters = line.strip("Parameters:            A, B, EMS:").split(" ")
+        if "A, B, EMS:" in line:
+            parameters = line.strip("Parameters: A, B, EMS: ").split(" ")
         if "Exposure time" in line and exposure_time == "0":
             exposure_time = line.strip("Exposure time [min]  : \n")
         if "Omega range" in line:
@@ -162,8 +166,6 @@ def make_single_crystal_data_table(cif_file, lxr_converted, sum_converted, save_
         if "Omega increment" in line:
             omega_inc = line.strip("Omega increment: \n")
             omega_inc = omega_inc.strip("( osc. )")
-        elif "Building reciprocal space" in line:
-            break
 
     with open(save_path, "a") as table_object:
         # Write all the data into a .tex file in a tabular-environment

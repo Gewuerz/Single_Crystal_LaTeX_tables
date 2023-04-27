@@ -70,23 +70,23 @@ class Main:
 
         self.message = StringVar()
         self.message.set("Noch keine Tabelle erzeugt.")
-        self.info_message = Label(self.window, bg="#FFFFFF", font="Calibri", width=30, textvariable=self.message)
-        self.info_text_1 = Label(self.window, font="Calibri 14 bold", bg="#FFFFFF",
+        self.info_message = Label(self.window, bg="#FFFFFF", font="Carlito 11", width=30, textvariable=self.message)
+        self.info_text_1 = Label(self.window, font="Carlito 14 bold", bg="#FFFFFF",
                                  text="Program zum Erstellen von TeX-Tabellen.")
-        self.info_text_2 = Label(self.window, font="Calibri", bg="#FFFFFF",
+        self.info_text_2 = Label(self.window, font="Carlito 11", bg="#FFFFFF",
                                  text="Für die Erstellung der Strukturverfeinerungsdatentabelle werden alle drei Dateien benötigt!\n"
                                       "Die .cif Datei muss mit JANA oder SHELLXL erstellt worden sein.\n"
                                       "Die Wyckoff-Lagen sind in den Dateien nicht vollständig enthalten!\n"
                                       "Die erstellten Tabellen benötigen das siunitx-Packet."
                                  )
 
-        self.cif_text = Label(self.window, font="Calibri", bg="#FFFFFF", text="Name der .cif-Datei")
-        self.lxr_text = Label(self.window, font="Calibri", bg="#FFFFFF", text="Name der .lxr-Datei")
-        self.sum_text = Label(self.window, font="Calibri", bg="#FFFFFF", text="Name .sum-Datei")
-        self.all_text = Label(self.window, font="Calibri", bg="#FFFFFF", borderwidth=1, relief="ridge",
+        self.cif_text = Label(self.window, font="Carlito 11", bg="#FFFFFF", text="Name der .cif-Datei")
+        self.lxr_text = Label(self.window, font="Carlito 11", bg="#FFFFFF", text="Name der .lxr-Datei")
+        self.sum_text = Label(self.window, font="Carlito 11", bg="#FFFFFF", text="Name der .sum-Datei")
+        self.all_text = Label(self.window, font="Carlito 11", bg="#FFFFFF", borderwidth=1, relief="ridge",
                               text="Es können sowohl einzelne, \n als auch alle drei Dateien \n auf einmal geöffnet werden.")
 
-        self.all_button = Button(self.window, text="Dateien öffnen", font="Calibri 11", bg="#CCDDAA", width=20,
+        self.all_button = Button(self.window, text="Dateien öffnen", font="Carlito 11", bg="#CCDDAA", width=20,
                                  command=self.open_all_files)
 
         self.separator1 = ttk.Separator(self.window, orient="horizontal")
@@ -94,33 +94,33 @@ class Main:
 
         self.entry_table = Entry(self.window, bg="white", width=30)
 
-        self.question_text = Label(self.window, font="Calibri", bg="#FFFFFF",
+        self.question_text = Label(self.window, font="Carlito 11", bg="#FFFFFF",
                                    text="Was für eine Tabelle soll erstellt werden?")
         self.question_variable = IntVar()
         self.question_variable.set(1)
 
-        self.r_structure_data = Radiobutton(self.window, bg="#FFFFFF", justify=LEFT, font="Calibri",
+        self.r_structure_data = Radiobutton(self.window, bg="#FFFFFF", justify=LEFT, font="Carlito 11",
                                             text="Daten der Strukturverfeinerung \n (.cif, .lxr, .sum)",
                                             variable=self.question_variable, value=1)
-        self.r_atomic_positions = Radiobutton(self.window, bg="#FFFFFF", font="Calibri",
+        self.r_atomic_positions = Radiobutton(self.window, bg="#FFFFFF", font="Carlito 11",
                                               text="Atomlagen (.cif)", variable=self.question_variable, value=2)
-        self.r_displacement_parameters = Radiobutton(self.window, bg="#FFFFFF", font="Calibri",
+        self.r_displacement_parameters = Radiobutton(self.window, bg="#FFFFFF", font="Carlito 11",
                                                      text="Auslenkungsparameter (.cif)",
                                                      variable=self.question_variable, value=3)
 
-        self.save_table_button = Button(self.window, bg="#E1E6DF", font="Calibri 11", text="Tabelle speichern unter",
+        self.save_table_button = Button(self.window, bg="#E1E6DF", font="Carlito 11", text="Tabelle speichern unter",
                                         width="20", command=self.save_table)
 
-        self.make_table_button = Button(self.window, bg="#E1E6DF", font="Calibri 11", text="Tabelle erstellen",
+        self.make_table_button = Button(self.window, bg="#E1E6DF", font="Carlito 11", text="Tabelle erstellen",
                                         width="20",
                                         command=self.make_table)
 
-        self.copyright = Label(self.window, font="Calibri", bg="#FFFFFF", text=" © 2022-2023 Judith Bönnighausen")
-        self.github_link = Label(self.window, font="Calibri 12 bold", bg="#FFFFFF", fg="#034748", text="GitHub",
+        self.copyright = Label(self.window, font="Carlito 10", bg="#FFFFFF", text=" © 2022-2023 Judith Bönnighausen")
+        self.github_link = Label(self.window, font="Carlito 11 bold", bg="#FFFFFF", fg="#034748", text="GitHub",
                                  cursor="hand2")
         self.github_link.bind("<Button-1>",
                               lambda e: self.callback("https://github.com/Gewuerz/Single_Crystal_LaTeX_tables"))
-        self.close_window = Button(self.window, bg="#E1E6DF", font="Calibri 11", text="Schließen", width="15",
+        self.close_window = Button(self.window, bg="#E1E6DF", font="Carlito 11", text="Schließen", width="15",
                                    command=self.close_program)
 
         # Assign a position to each element
